@@ -3,34 +3,27 @@
     <nav class="side-nav">
         <a href="" class="intro-x flex items-center pl-5 pt-4 mt-3">
             <!-- <img alt="Midone - HTML Admin Template" class="w-6" src="dist/images/logo.svg"> -->
-            <span class="hidden xl:block text-white text-lg ml-3"> Epaper-admin </span>
+            <span class="hidden xl:block text-white text-lg ml-3"> SSS </span>
         </a>
         <div class="side-nav__devider my-6"></div>
         <ul>
             <li>
-                <Link :href="'/admin/categories'"
-                    :class="{ 'side-menu--active': $page.url === '/admin/categories' || $page.url === '/admin/create-categories' }"
+                <Link :href="'/users'"
+                    :class="{ 'side-menu--active': $page.url === '/users' || $page.url === '/create-users' }"
                     class="side-menu cursor-pointer">
                 <div class="side-menu__icon"> <i data-lucide="inbox"></i> </div>
-                <div class="side-menu__title"> Categories </div>
+                <div class="side-menu__title"> Users </div>
                 </Link>
             </li>
-            <li>
-                <Link :href="'/admin/sub-categories'"
-                    :class="{ 'side-menu--active': $page.url === '/admin/sub-categories' || $page.url === '/admin/create-sub-categories' }"
-                    class="side-menu cursor-pointer">
-                <div class="side-menu__icon"> <i data-lucide="inbox"></i> </div>
-                <div class="side-menu__title"> Sub categories </div>
-                </Link>
-            </li>
-            <li>
+
+            <!-- <li>
                 <Link :href="'/admin/epapers'"
                     :class="{ 'side-menu--active': $page.url === '/admin/epapers' || $page.url === '/admin/epapers' }"
                     class="side-menu cursor-pointer">
                 <div class="side-menu__icon"> <i data-lucide="inbox"></i> </div>
                 <div class="side-menu__title"> Epapers </div>
                 </Link>
-            </li>
+            </li> -->
             <!-- <li>
                     <a href="javascript:;.html" class="side-menu side-menu--active">
                         <div class="side-menu__icon"> <i data-lucide="home"></i> </div>

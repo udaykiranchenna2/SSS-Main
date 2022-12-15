@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Foundation\Application;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -13,23 +13,34 @@ use Inertia\Inertia;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
+ */
 
-Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
+// Route::get('/', function () {
+//     return Inertia::render('Welcome', [
+//         'canLogin' => Route::has('login'),
+//         'canRegister' => Route::has('register'),
+//         'laravelVersion' => Application::VERSION,
+//         'phpVersion' => PHP_VERSION,
+//     ]);
+// });
 
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
+
+    Route::get('/', function () {
+        return Inertia::render('Dashboard');
+    })->name('/');
     Route::get('/dashboard', function () {
         return Inertia::render('Dashboard');
-    })->name('dashboard');
+    })->name('/dashboard');
+
+    Route::get('/users', [UserController::class, 'Users'])->name('/users');
+    Route::get('/create-users', [UserController::class, 'createUser'])->name('/create-users');
+    Route::post('/user-store', [UserController::class, 'storeUser'])->name('/user-store');
+    Route::get('/user-edit', [UserController::class, 'editUser'])->name('/user-edit');
+    Route::post('/user-update', [UserController::class, 'updateUser'])->name('/user-update');
+
 });
