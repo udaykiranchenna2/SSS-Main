@@ -17,10 +17,12 @@ return new class extends Migration
             $table->id();
             $table->dateTime('requestdate');
             $table->string('requestno');
-            $table->unsignedBigInteger('customerid');
+            $table->string('customerid');
             $table->string('calltype');
-            $table->string('brand');
-            $table->string('productcategory');
+            $table->string('brand')->nullable();
+            $table->text('description')->nullable();
+            $table->string('productcategory')->nullable();;
+            $table->unsignedBigInteger('addedby')->nullable();;
             $table->timestamps();
 
             

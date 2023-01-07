@@ -8,11 +8,27 @@
         <div class="side-nav__devider my-6"></div>
         <ul>
             <li>
+                <Link :href="'/open-calls'"
+                    :class="{ 'side-menu--active': $page.url === '/open-calls' || $page.url === '/create-call' }"
+                    class="side-menu cursor-pointer">
+                <div class="side-menu__icon"> <i data-lucide="inbox"></i> </div>
+                <div class="side-menu__title"> Calls </div>
+                </Link>
+            </li>
+            <li>
                 <Link :href="'/users'"
                     :class="{ 'side-menu--active': $page.url === '/users' || $page.url === '/create-users' }"
                     class="side-menu cursor-pointer">
                 <div class="side-menu__icon"> <i data-lucide="inbox"></i> </div>
                 <div class="side-menu__title"> Users </div>
+                </Link>
+            </li>
+            <li>
+                <Link :href="'/customers'"
+                    :class="{ 'side-menu--active': $page.url === '/customers'  }"
+                    class="side-menu cursor-pointer">
+                <div class="side-menu__icon"> <i data-lucide="inbox"></i> </div>
+                <div class="side-menu__title"> Customers </div>
                 </Link>
             </li>
 

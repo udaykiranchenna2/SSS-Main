@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\AllocateController;
+use App\Http\Controllers\BrandController;
+use App\Http\Controllers\CallsContoller;
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\ProductCategoryController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -42,5 +47,24 @@ Route::middleware([
     Route::post('/user-store', [UserController::class, 'storeUser'])->name('/user-store');
     Route::get('/user-edit', [UserController::class, 'editUser'])->name('/user-edit');
     Route::post('/user-update', [UserController::class, 'updateUser'])->name('/user-update');
+    
+    // Calls
+
+    Route::get('/create-call', [CallsContoller::class, 'createCall'])->name('/create-call');
+    Route::get('/open-calls', [CallsContoller::class, 'openCalls'])->name('/open-calls');
+    Route::post('/create-store', [CallsContoller::class, 'storeCall'])->name('/create-store');
+    Route::post('/allocate-engineer', [AllocateController::class, 'allocateEngineer'])->name('/allocate-engineer');
+
+//Brands
+Route::get('/dropdown-brands', [BrandController::class, 'brandsForDropDown'])->name('/dropdown-brands');
+Route::get('/load-brands', [BrandController::class, 'loadBrands'])->name('/load-brands');
+Route::get('/load-cats', [ProductCategoryController::class, 'loadPcats'])->name('/load-cats');
+
+//Customers
+Route::post('/update-customer', [CustomerController::class, 'updateCustomer'])->name('/update-customer');
+
+
+Route::get('/customers', [CustomerController::class, 'index'])->name('/customers');
+
 
 });

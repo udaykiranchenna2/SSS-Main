@@ -10,10 +10,11 @@ class CallStatus extends Model
     use HasFactory;
     protected $fillable = [
         'callid',
-        'userid',
-        'assigneddate',
-        'assignedActive',
+        'status',
+        'type',
+        'mode',
         'level',
-        'assignedby',
+        'visitdate',
+        'addedby',
     ];
 }

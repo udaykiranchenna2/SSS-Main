@@ -13,15 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('call_statuses', function (Blueprint $table) {
+        Schema::create('brands', function (Blueprint $table) {
             $table->id();
-            $table->string('callid')->nullable();
-            $table->string('type')->nullable();
-            $table->text('status')->nullable();;
-            $table->boolean('mode')->nullable();;
-            $table->integer('level')->nullable();;
-            $table->text('addedby')->nullable();
-
+            $table->string('brandname');
+            $table->boolean('status');
             $table->timestamps();
         });
     }
@@ -33,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('call_statuses');
+        Schema::dropIfExists('brands');
     }
 };
