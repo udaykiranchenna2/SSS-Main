@@ -15,6 +15,10 @@ class CallStatus extends Model
         'mode',
         'level',
         'visitdate',
+        'sub_status',
+        'remark',
+        'status_json',  
+        'attachments',
         'addedby',
     ];
 }

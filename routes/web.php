@@ -52,8 +52,13 @@ Route::middleware([
 
     Route::get('/create-call', [CallsContoller::class, 'createCall'])->name('/create-call');
     Route::get('/open-calls', [CallsContoller::class, 'openCalls'])->name('/open-calls');
+    Route::get('/edit-call', [CallsContoller::class, 'editCall'])->name('/edit-call');
+    Route::post('/update-call', [CallsContoller::class, 'updateCall'])->name('/update-call');
     Route::post('/create-store', [CallsContoller::class, 'storeCall'])->name('/create-store');
     Route::post('/allocate-engineer', [AllocateController::class, 'allocateEngineer'])->name('/allocate-engineer');
+
+    Route::post('/add-new-status', [CallsContoller::class, 'addNewStatus'])->name('/add-new-status');
+
 
 //Brands
 Route::get('/dropdown-brands', [BrandController::class, 'brandsForDropDown'])->name('/dropdown-brands');

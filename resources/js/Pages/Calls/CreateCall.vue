@@ -170,6 +170,13 @@
                                             :message="form.errors.get('description')" />
                 
                                     </div>
+                                    <div class="mt-5">
+                                        <InputLabel for="VisitDateTime" value="Visit Date Time" />
+                                        <Datepicker v-model="form.visitdate"></Datepicker>
+                                        <div />
+                                        <InputError class="mt-2" v-if="form.errors.has('visitdate')"
+                                            :message="form.errors.get('visitdate')" />
+                                    </div>
                                 </div>
                             </div>
                            </div>
@@ -209,7 +216,9 @@ import AppLayout from '@/Layouts/AppLayout.vue';
 import axios from 'axios';
 import Form from 'vform'
 import { useToast } from "vue-toastification";
-import Multiselect from '@vueform/multiselect'
+import Multiselect from '@vueform/multiselect';
+import Datepicker from '@vuepic/vue-datepicker';
+    import '@vuepic/vue-datepicker/dist/main.css'
 const toast = useToast();
 export default {
     props:{
@@ -219,7 +228,7 @@ export default {
     },
     components: {
         Head, Link, AuthenticationCard, AuthenticationCardLogo, Checkbox, InputError, InputLabel, PrimaryButton, 
-        TextInput, AppLayout,TabGroup, TabList, Tab, TabPanels, TabPanel,Multiselect
+        TextInput, AppLayout,TabGroup, TabList, Tab, TabPanels, TabPanel,Multiselect,Datepicker
     },
     data() {
         return {

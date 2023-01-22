@@ -31,11 +31,15 @@
                                         </th> -->
                                         <th scope="col"
                                             class="px-6 py-3 text-left text-xs font-bold text-left text-white uppercase">
-                                            Request No.
+                                            Req No.
                                         </th>
                                         <th scope="col"
                                             class="px-6 py-3 text-left text-xs font-bold text-left text-white uppercase">
-                                            Request Date
+                                            Req Date
+                                        </th>
+                                        <th scope="col"
+                                        class="px-6 py-3 text-left text-xs font-bold text-left text-white uppercase">
+                                        Visit date
                                         </th>
                                         <th scope="col"
                                             class="px-6 py-3 text-left text-xs font-bold text-left text-white uppercase">
@@ -43,16 +47,16 @@
                                         </th>
                                         <th scope="col"
                                             class="px-6 py-3 text-left text-xs font-bold  text-white uppercase">
-                                            Age
+                                            Call Age
                                         </th>
                                       
                                         <th scope="col"
                                             class="px-6 py-3 text-left text-xs font-bold  text-white uppercase">
-                                            Customer Code
+                                            Cust Code
                                         </th>
                                         <th scope="col"
                                         class="px-6 py-3 text-left text-xs font-bold  text-white uppercase">
-                                        Customer name
+                                        Cust name
                                         </th>
                                         <th scope="col"
                                         class="px-6 py-3 text-left text-xs font-bold  text-white uppercase">
@@ -61,7 +65,7 @@
                                         
                                         <th scope="col"
                                             class="px-6 py-3 text-left text-xs font-bold  text-white uppercase">
-                                            Service Engineer Name
+                                            Service Engg Name
                                         </th>
                                         <th scope="col"
                                             class="px-6 py-3 text-left text-xs font-bold  text-white uppercase">
@@ -94,39 +98,43 @@
                                             </div>
                                         </td> -->
                                         <td
-                                            class="px-6 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
+                                            class="px-3 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
                                             {{ item.requestno }}
                                         </td>
                                         <td
-                                            class="px-6 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
+                                            class="px-3 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
                                             {{ dateFormat1(item.created_at) }}
                                         </td>
                                         <td
-                                            class="px-6 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
+                                        class="px-3 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
+                                        <span v-if="item.visitdate">{{ dateFormat1(item.visitdate) }}</span>
+                                    </td>
+                                        <td
+                                            class="px-3 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
                                             {{item.user.name }}
                                         </td>
                                         <td
-                                            class="px-6 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
+                                            class="px-3 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
                                             {{ dateDiff(item.created_at) }}
                                         </td>
-                                        <!-- <td class="px-6 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
+                                        <!-- <td class="px-3 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
                                            {{item.id}}
                                         </td> -->
                                         <td
-                                            class="px-6 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
+                                            class="px-3 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
                                             {{ item.customer.customerid }}
                                         </td>
                                         <td
-                                            class="px-6 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
+                                            class="px-3 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
                                             {{ item.customer.firstname }}
                                             {{ item.customer.lastname }}
                                         </td>
                                         <td
-                                            class="px-6 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
+                                            class="px-3 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
                                             {{ calltype(item.calltype) }}
                                         </td>
                                         <td
-                                            class="px-6 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
+                                            class="px-3 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
                                             <span v-if="item.assignees.length>0">
                                                 {{assignedUser(item.assignees[0].userid) }}
                                             </span>
@@ -135,22 +143,22 @@
                                             </span>
                                         </td>
                                         <td
-                                            class="px-6 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
+                                            class="px-3 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
                                             <span v-if="item.statuses && item.statuses.length>0">
                                                 {{item.statuses[0].status }}
                                             </span>
                                         </td>
                                         <td
-                                            class="px-6 py-4 text-center text-sm font-medium text-gray-800 whitespace-nowrap">
+                                            class="px-3 py-4 text-center text-sm font-medium text-gray-800 whitespace-nowrap">
                                             <i class="cursor-pointer fa-solid fa-user-plus"
                                                 @click="openAllocation(item)"></i>
                                         </td>
                                         <td
-                                            class="px-6 py-4 text-center text-sm font-medium text-gray-800 whitespace-nowrap">
+                                            class="px-3 py-4 text-center text-sm font-medium text-gray-800 whitespace-nowrap">
                                             <i class="cursor-pointer fa-solid fa-pen" @click="openEditModal(item)"></i>
                                         </td>
                                         <td
-                                            class="px-6 py-4 text-center text-sm font-medium text-gray-800 whitespace-nowrap">
+                                            class="px-3 py-4 text-center text-sm font-medium text-gray-800 whitespace-nowrap">
                                             <i class="cursor-pointer fa-solid fa-eye" @click="openViewModal(item)"></i>
                                         </td>
                                     </tr>
@@ -160,6 +168,7 @@
                     </div>
                 </div>
             </div>
+                                                                                            
             <TransitionRoot appear :show="isOpen" as="template">
                 <Dialog as="div" @close="closeModal" class="relative z-10">
                     <TransitionChild as="template" enter="duration-300 ease-out" enter-from="opacity-0"
@@ -257,283 +266,7 @@
                     </div>
                 </Dialog>
             </TransitionRoot>
-            <TransitionRoot appear :show="openEdit" as="template">
-                <Dialog as="div" @close="closeEditmodal" class="relative z-10">
-                    <TransitionChild as="template" enter="duration-300 ease-out" enter-from="opacity-0"
-                        enter-to="opacity-100" leave="duration-200 ease-in" leave-from="opacity-100"
-                        leave-to="opacity-0">
-                        <div class="fixed inset-0 bg-black bg-opacity-25" />
-                    </TransitionChild>
-
-                    <div class="fixed inset-0 overflow-y-auto">
-                        <div class="flex min-h-full items-center justify-center p-4 text-center">
-                            <TransitionChild as="template" enter="duration-300 ease-out" enter-from="opacity-0 scale-95"
-                                enter-to="opacity-100 scale-100" leave="duration-200 ease-in"
-                                leave-from="opacity-100 scale-100" leave-to="opacity-0 scale-95">
-                                <DialogPanel
-                                    class="w-full  transform overflow-hidden rounded-2xl bg-white pb-6 text-left align-middle shadow-xl transition-all">
-                                    <DialogTitle as="h3" class="text-lg font-medium leading-6 text-gray-900">
-
-                                        <div class="flex justify-between bg-gray-300  py-2  px-6">
-                                            <div>
-                                                Edit Call
-                                            </div>
-                                            <div @click="closeEditmodal" class="cursor-pointer">
-                                                <i class="fa-solid fa-x"></i>
-                                            </div>
-                                        </div>
-                                    </DialogTitle>
-                                    <div class="mt-2 px-6">
-                                        <form @submit.prevent="submit">
-                                            <div>
-                                                <TabGroup>
-                                                    <TabList class="flex justify-center">
-                                                        <Tab as="template" v-slot="{ selected }">
-                                                            <button
-                                                                :class="{ 'bg-blue-500 p-2 text-white  rounded-lg mx-2': selected, 'bg-white p-2 rounded-lg text-black': !selected }">
-                                                                Call Details And Update
-                                                            </button>
-                                                        </Tab>
-                                                    </TabList>
-                                                    <TabPanels>
-                                                        <TabPanel>
-
-                                                            <div>
-                                                                <div class="text-2xl font-bold">
-                                                                    Customer Details
-                                                                </div>
-                                                                <div>
-                                                                    <div class="grid md:grid-cols-4 gap-2">
-                                                                        <div class="mt-4">
-                                                                            <InputLabel for="name"
-                                                                                value="Customer Id" />
-                                                                            <div id="firstname" type="text"
-                                                                                class="mt-1 block w-full p-1" autofocus
-                                                                                autocomplete="firstname">
-                                                                                {{ this.opendedItem.customer.customerid }}
-                                                                            </div>
-                                                                            <div />
-                                                                            <InputError class="mt-2"
-                                                                                v-if="form2.errors.has('firstname')"
-                                                                                :message="form2.errors.get('firstname')" />
-                                                                        </div>
-                                                                        <div class="mt-4">
-                                                                            <InputLabel for="name" value="First name" />
-                                                                            <TextInput id="firstname"
-                                                                                v-model="form2.firstname" type="text"
-                                                                                class="mt-1 block w-full p-1 p-1"
-                                                                                autofocus autocomplete="firstname" />
-                                                                            <div />
-                                                                            <InputError class="mt-2"
-                                                                                v-if="form2.errors.has('firstname')"
-                                                                                :message="form2.errors.get('firstname')" />
-                                                                        </div>
-                                                                        <div class="mt-4">
-                                                                            <InputLabel for="Lastname"
-                                                                                value="Last name" />
-                                                                            <TextInput id="Lastname"
-                                                                                v-model="form2.lastname" type="text"
-                                                                                class="mt-1 block w-full p-1"
-                                                                                autocomplete="name" />
-                                                                            <InputError class="mt-2"
-                                                                                v-if="form2.errors.has('lastname')"
-                                                                                :message="form2.errors.get('lastname')" />
-
-                                                                        </div>
-
-                                                                        <div class="mt-4">
-                                                                            <InputLabel for="email" value="Email" />
-                                                                            <TextInput id="email" v-model="form2.email"
-                                                                                type="email"
-                                                                                class="mt-1 block w-full p-1" />
-                                                                            <InputError class="mt-2"
-                                                                                v-if="form2.errors.has('email')"
-                                                                                :message="form2.errors.get('email')" />
-                                                                        </div>
-                                                                        <div class="mt-4">
-                                                                            <InputLabel for="city" value="City" />
-                                                                            <TextInput id="city" v-model="form2.city"
-                                                                                type="text"
-                                                                                class="mt-1 block w-full p-1" />
-                                                                            <InputError class="mt-2"
-                                                                                v-if="form2.errors.has('city')"
-                                                                                :message="form2.errors.get('city')" />
-                                                                        </div>
-
-                                                                        <div class="mt-4">
-                                                                            <InputLabel for="address" value="Address" />
-                                                                            <textarea id="address"
-                                                                                v-model="form2.address" type="text"
-                                                                                class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm w-full">\
-                                                                         </textarea>
-                                                                            <InputError class="mt-2"
-                                                                                v-if="form2.errors.has('address')"
-                                                                                :message="form2.errors.get('address')" />
-
-                                                                        </div>
-                                                                        <div class="mt-4">
-                                                                            <InputLabel for="area" value="Area" />
-                                                                            <textarea id="area" v-model="form2.area"
-                                                                                type="text"
-                                                                                class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm w-full">\
-                                                                         </textarea>
-                                                                            <InputError class="mt-2"
-                                                                                v-if="form2.errors.has('area')"
-                                                                                :message="form2.errors.get('area')" />
-
-                                                                        </div>
-                                                                        <div class="mt-5 w-full">
-                                                                            <InputLabel for="state" value="State" />
-                                                                            <select name="state" id=""
-                                                                                v-model="form2.state"
-                                                                                class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm w-full">
-                                                                                <option value="Gujarat">Gujarat</option>
-                                                                            </select>
-                                                                            <InputError class="mt-2"
-                                                                                v-if="form2.errors.has('state')"
-                                                                                :message="form2.errors.get('state')" />
-                                                                        </div>
-                                                                        <div class="mt-5 w-full">
-                                                                            <InputLabel for="country" value="Country" />
-                                                                            <select name="country" id=""
-                                                                                v-model="form2.country"
-                                                                                class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm w-full">
-                                                                                <option value="India">India</option>
-                                                                            </select>
-                                                                            <InputError class="mt-2"
-                                                                                v-if="form2.errors.has('country')"
-                                                                                :message="form2.errors.get('country')" />
-                                                                        </div>
-                                                                        <div class="mt-4">
-                                                                            <InputLabel for="pincode" value="Pincode" />
-                                                                            <TextInput id="pincode"
-                                                                                v-model="form2.pincode" type="text"
-                                                                                class="mt-1 block w-full p-1" />
-                                                                            <InputError class="mt-2"
-                                                                                v-if="form2.errors.has('pincode')"
-                                                                                :message="form2.errors.get('pincode')" />
-                                                                        </div>
-                                                                        <div class="mt-4">
-                                                                            <InputLabel for="mobile1" value="Mobile1" />
-                                                                            <TextInput id="mobile1"
-                                                                                v-model="form2.mobile1" type="text"
-                                                                                class="mt-1 block w-full p-1" />
-                                                                            <InputError class="mt-2"
-                                                                                v-if="form2.errors.has('mobile1')"
-                                                                                :message="form2.errors.get('mobile1')" />
-                                                                        </div>
-                                                                        <div class="mt-4">
-                                                                            <InputLabel for="mobile2" value="Mobile2" />
-                                                                            <TextInput id="mobile2"
-                                                                                v-model="form2.mobile2" type="text"
-                                                                                class="mt-1 block w-full p-1" />
-                                                                            <InputError class="mt-2"
-                                                                                v-if="form2.errors.has('mobile2')"
-                                                                                :message="form2.errors.get('mobile2')" />
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-                                                                <div class="text-2xl font-bold mt-10">
-                                                                    Call Details
-                                                                </div>
-                                                                <div>
-                                                                    <div class="grid md:grid-cols-3 gap-2">
-                                                                        <div class="mt-5 w-full">
-                                                                            <InputLabel for="calltype"
-                                                                                value="Call Type" />
-                                                                            <select name="calltype" id=""
-                                                                                v-model="form2.calltype"
-                                                                                class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm w-full">
-                                                                                <option value="firstdemoinstalation">
-                                                                                    First demo and installation</option>
-                                                                                <option value="complaintcall">Complaint
-                                                                                    Call</option>
-                                                                                <option value="reinstalation">
-                                                                                    Re-instalation</option>
-                                                                            </select>
-                                                                            <InputError class="mt-2"
-                                                                                v-if="form2.errors.has('calltype')"
-                                                                                :message="form2.errors.get('calltype')" />
-                                                                        </div>
-                                                                        <div class="mt-5 w-full">
-                                                                            <InputLabel for="brandname" value="Brand" />
-                                                                            <Multiselect v-model="form2.brandname"
-                                                                                :options="brands" />
-                                                                            <InputError class="mt-2"
-                                                                                v-if="form2.errors.has('brandname')"
-                                                                                :message="form2.errors.get('brandname')" />
-                                                                        </div>
-
-                                                                        <div class="mt-4"
-                                                                            v-if="form2.brandname == 'Other'">
-                                                                            <InputLabel for="brand" value="Add Brand" />
-                                                                            <TextInput id="extrabrand"
-                                                                                v-model="form2.extrabrand" type="text"
-                                                                                class="mt-1 block w-full p-1" autofocus
-                                                                                autocomplete="extrabrand" />
-                                                                            <div />
-                                                                            <InputError class="mt-2"
-                                                                                v-if="form2.errors.has('extrabrand')"
-                                                                                :message="form2.errors.get('extrabrand')" />
-                                                                        </div>
-                                                                        <div class="mt-5 w-full">
-                                                                            <InputLabel for="productcategory"
-                                                                                value="Product Category" />
-                                                                            <Multiselect v-model="form2.productcategory"
-                                                                                :options="pcats" />
-                                                                            <InputError class="mt-2"
-                                                                                v-if="form2.errors.has('productcategory')"
-                                                                                :message="form2.errors.get('productcategory')" />
-                                                                        </div>
-
-                                                                        <div class="mt-4"
-                                                                            v-if="form2.productcategory == 'Other'">
-                                                                            <InputLabel for="productcategory"
-                                                                                value="Add Product Category" />
-                                                                            <TextInput id="extraproductcategory"
-                                                                                v-model="form2.extraproductcategory"
-                                                                                type="text"
-                                                                                class="mt-1 block w-full p-1" autofocus
-                                                                                autocomplete="extraproductcategory" />
-                                                                            <div />
-                                                                            <InputError class="mt-2"
-                                                                                v-if="form2.errors.has('extraproductcategory')"
-                                                                                :message="form2.errors.get('extraproductcategory')" />
-                                                                        </div>
-                                                                        <div class="mt-4">
-                                                                            <InputLabel for="description"
-                                                                                value="Description" />
-                                                                            <textarea id="description"
-                                                                                v-model="form2.description" type="text"
-                                                                                class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm w-full">\
-                                                                         </textarea>
-                                                                            <InputError class="mt-2"
-                                                                                v-if="form2.errors.has('description')"
-                                                                                :message="form2.errors.get('description')" />
-
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </TabPanel>
-                                                    </TabPanels>
-                                                </TabGroup>
-                                            </div>
-                                            <div class="flex items-center justify-end mt-4">
-                                                <PrimaryButton class="ml-4" :class="{ 'opacity-25': form2.processing }"
-                                                    :disabled="form2.processing">
-                                                    Add
-                                                </PrimaryButton>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </DialogPanel>
-                            </TransitionChild>
-                        </div>
-                    </div>
-                </Dialog>
-            </TransitionRoot>
+          
             <TransitionRoot appear :show="openView" as="template">
                 <Dialog as="div" @close="closeViewModal" class="relative z-10">
                     <TransitionChild as="template" enter="duration-300 ease-out" enter-from="opacity-0"
@@ -773,16 +506,16 @@
 
 <script>
     import {
-        TransitionRoot,
-        TransitionChild,
-        Dialog,
-        DialogPanel,
-        DialogTitle,
-        TabGroup,
-        TabList,
-        Tab,
-        TabPanels,
-        TabPanel
+    TransitionRoot,
+    TransitionChild,
+    Dialog,
+    DialogPanel,
+    DialogTitle,
+    TabGroup,
+    TabList,
+    Tab,
+    TabPanels,
+    TabPanel
     } from '@headlessui/vue'
     import InputError from '@/Components/InputError.vue';
     import InputLabel from '@/Components/InputLabel.vue';
@@ -796,6 +529,7 @@
         Link,
         useForm
     } from '@inertiajs/inertia-vue3';
+
     import AppLayout from '@/Layouts/AppLayout.vue';
 
     import Form from 'vform'
@@ -846,9 +580,16 @@ import axios from 'axios';
                 openEdit: false,
                 openView: false,
                 selectedAllocation: [],
-                opendedItem: []
+                opendedItem: [],
+                pcatsList:this.pcats,
+                brandsList:this.brands,
 
             }
+        },
+        mounted()
+        {
+        this.brandsList["Other"] = "Other";
+        this.pcatsList["Other"] = "Other";
         },
         methods: {
             allocate() {
@@ -893,26 +634,8 @@ import axios from 'axios';
                 this.isOpen = false;
             },
             openEditModal(item) {
-                console.log(item)
-                this.opendedItem = item;
-
-                this.form2.firstname = this.opendedItem.customer.firstname;
-                this.form2.lastname = this.opendedItem.customer.lastname;
-                this.form2.email = this.opendedItem.customer.email;
-                this.form2.city = this.opendedItem.customer.city;
-                this.form2.state = this.opendedItem.customer.state;
-                this.form2.country = this.opendedItem.customer.country;
-                this.form2.address = this.opendedItem.customer.address;
-                this.form2.area = this.opendedItem.customer.area;
-                this.form2.state = this.opendedItem.customer.state;
-                this.form2.pincode = this.opendedItem.customer.pincode;
-                this.form2.mobile1 = this.opendedItem.customer.mobile1;
-                this.form2.mobile2 = this.opendedItem.customer.mobile2;
-                this.form2.calltype = this.opendedItem.calltype;
-                this.form2.brandname = this.opendedItem.brand;
-                this.form2.productcategory = this.opendedItem.productcategory;
-                this.form2.description = this.opendedItem.description;
-                this.openEdit = true;
+            this.$inertia.get('/edit-call',{callid: item.requestno});
+               
             },
             closeEditmodal() {
                 this.openEdit = false;

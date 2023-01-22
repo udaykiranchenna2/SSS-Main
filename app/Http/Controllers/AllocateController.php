@@ -18,7 +18,7 @@ class AllocateController extends Controller
       $callAssign->userid = $request->engineer;
       $callAssign->assigneddate = Carbon::now();
       $callAssign->assignedActive =true;
-      $callAssign->level =1;
+      $callAssign->level =CallAssign::where('callid', $callAssign->callid)->count()+1;
       $callAssign->assignedby =Auth::user()->id;
       $callAssign->save();
 
@@ -26,9 +26,9 @@ class AllocateController extends Controller
       $status->callid = $request->callid;
       $status->status = 'Allocated';
       $status->type = 'normal';
-      $status->mode = 1;
+      $status->mode = 2;
       $status->level = CallStatus::where('callid', $callAssign->callid)->count()+1;
-      $status->visitdate = Carbon::parse($request->visitdate);
+      $status->visitdate = null;
       $status->addedby = Auth::user()->id;
       $status->save();
 

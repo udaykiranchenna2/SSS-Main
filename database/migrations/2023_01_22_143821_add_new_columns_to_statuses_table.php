@@ -13,8 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('calls', function (Blueprint $table) {
-            $table->foreign('customerid')->references('customerid')->on('customers')->onUpdate('restrict')->onDelete('restrict');
+        Schema::table('call_statuses', function (Blueprint $table) {
+            $table->text('attachments')->nullable();
+
         });
     }
 
@@ -25,8 +26,7 @@ return new class extends Migration
      */
     public function down()
     {
-        // Schema::table('calls', function (Blueprint $table) {
-        //     $table->string('status')->nullable()->default('open');
-        // });
+        Schema::table('call_statuses', function (Blueprint $table) {
+        });
     }
 };

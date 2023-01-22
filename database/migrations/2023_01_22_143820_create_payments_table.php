@@ -13,8 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('calls', function (Blueprint $table) {
-            $table->foreign('customerid')->references('customerid')->on('customers')->onUpdate('restrict')->onDelete('restrict');
+        Schema::create('payments', function (Blueprint $table) {
+            $table->id();
+            $table->string('callid');
+            $table->string('type');
+            $table->string('mode');
+            $table->string('amount');
+            $table->string('paid');
+            $table->timestamps();
         });
     }
 
@@ -25,8 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        // Schema::table('calls', function (Blueprint $table) {
-        //     $table->string('status')->nullable()->default('open');
-        // });
+        Schema::dropIfExists('payments');
     }
 };
