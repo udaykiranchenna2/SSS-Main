@@ -36,10 +36,10 @@ Route::middleware([
 ])->group(function () {
 
     Route::get('/', function () {
-        return Inertia::render('Dashboard');
+        return redirect('/open-calls');
     })->name('/');
     Route::get('/dashboard', function () {
-        return Inertia::render('Dashboard');
+        return redirect('/open-calls');
     })->name('/dashboard');
 
     Route::get('/users', [UserController::class, 'Users'])->name('/users');
@@ -52,14 +52,17 @@ Route::middleware([
 
     Route::get('/create-call', [CallsContoller::class, 'createCall'])->name('/create-call');
     Route::get('/open-calls', [CallsContoller::class, 'openCalls'])->name('/open-calls');
+    Route::get('/closed-calls', [CallsContoller::class, 'closedCalls'])->name('/closed-calls');
     Route::get('/edit-call', [CallsContoller::class, 'editCall'])->name('/edit-call');
     Route::post('/update-call', [CallsContoller::class, 'updateCall'])->name('/update-call');
     Route::post('/create-store', [CallsContoller::class, 'storeCall'])->name('/create-store');
     Route::post('/allocate-engineer', [AllocateController::class, 'allocateEngineer'])->name('/allocate-engineer');
 
     Route::post('/add-new-status', [CallsContoller::class, 'addNewStatus'])->name('/add-new-status');
+    Route::get('/pdf-jobsheet', [CallsContoller::class, 'pdfJobsheet'])->name('/pdf-jobsheet');
+    Route::get('/pdf', [CallsContoller::class, 'openPDF'])->name('/pdf');
 
-
+    
 //Brands
 Route::get('/dropdown-brands', [BrandController::class, 'brandsForDropDown'])->name('/dropdown-brands');
 Route::get('/load-brands', [BrandController::class, 'loadBrands'])->name('/load-brands');

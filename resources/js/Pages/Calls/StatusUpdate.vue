@@ -34,8 +34,15 @@
                                             <InputError class="mt-2" v-if="form.errors.has('status')"
                                                 :message="form.errors.get('status')" />
                                         </div>
+                                        <div class="mt-4" v-if="form.status == 'Peding From Customer Side'">
+                                            <InputLabel for="name" value="Service call sub status" />
+                                            <TextInput type="text" id="" v-model="form.sub_status"
+                                            class="mt-1 block w-full p-2" autofocus autocomplete="amount" />
+                                            <InputError class="mt-2" v-if="form.errors.has('sub_status')"
+                                                :message="form.errors.get('sub_status')" />
+                                        </div>
                                         <div class="mt-4" v-if="form.status == 'Work Shop Repair'">
-                                            <InputLabel for="name" value="Service call status" />
+                                            <InputLabel for="name" value="Service call sub status" />
                                             <Multiselect id="sub_status" v-model="form.sub_status" type="text"
                                                 :options="subStatuses" class="mt-1 block w-full p-1" autofocus
                                                 autocomplete="sub_status" />
@@ -102,8 +109,8 @@
                                                  dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                                                 id="file_input" type="file" v-on:change="handleFileUpload()" />
 
-                                            <InputError class="mt-2" v-if="form.errors.has('attachements')"
-                                                :message="form.errors.get('attachements')" />
+                                            <InputError class="mt-2" v-if="form.errors.has('attachments')"
+                                                :message="form.errors.get('attachments')" />
                                         </div>
 
 
@@ -277,7 +284,7 @@
         Head,
         Link,
         useForm,router
-    } from '@inertiajs/inertia-vue3';
+    } from '@inertiajs/vue3';
 
     import AppLayout from '@/Layouts/AppLayout.vue';
 
@@ -286,7 +293,6 @@
     import {
         ChevronUpIcon
     } from '@heroicons/vue/20/solid'
-    import { router } from '@inertiajs/vue3'
 
 
     export default {
@@ -360,6 +366,7 @@
                     'Part Replaced': 'Part Replaced',
                     'Work Shop Repair': 'Work Shop Repair',
                     'Call Close': 'Call Close',
+                    'Re-open': 'Re-open',
 
                 },
                 subStatuses: {
@@ -424,7 +431,7 @@
             },
 
             handleFileUpload() {
-                this.form.attachements = this.$refs.uploadAttachments.files;
+                this.form.attachments = this.$refs.uploadAttachments.files;
                 console.log(this.$refs.uploadAttachments.files);
             },
 
@@ -442,15 +449,19 @@
             addNewStatus() {
                 this.form.post('/add-new-status')
                     .then(response => {
-                        router.visit('/edit-call?callid='+this.item.requestno+'', {
+                        this.form.clear();
+                        this.form.reset()
+                        router.reload('/edit-call?callid='+this.item.requestno+'', {
                         only: ['statuses'],
-                        })
+                        });
 
                     })
             },
             updateNextVisit() {
                 this.form2.post('add-new-status')
                     .then(response => {
+                        this.form2.clear();
+                        
                         console.log(response);
                     })
             }

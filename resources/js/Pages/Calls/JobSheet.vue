@@ -2,37 +2,85 @@
     <AppLayout title="Users">
 
         <Head title="Calls" />
-
-       
-        <TabGroup>
-            <TabList class="bg-gray-300 my-2 p-1 rounded">
-              <Tab class="mx-2" as="template" v-slot="{ selected }">
-                <button :class="{ 'bg-blue-500 text-white': selected, 'bg-white text-black': !selected }" class="btn px-5">Customer & Call Update</button>
-              </Tab>
-              <Tab class="mx-2" as="template" v-slot="{ selected }">
-                <button :class="{ 'bg-blue-500 text-white': selected, 'bg-white text-black': !selected }" class="btn px-5">Status Update</button>
-              </Tab>
-            </TabList>
-            <TabPanels>
-              <TabPanel>
-                <div class="p-2  bg-white">
-                    <UpdateCustomer :item="call" :engineers="engineers" :assignedusers="assignedusers" :brands="brands" :pcats="pcats" /> 
-                    <UpdateCallDetails :item="call" :engineers="engineers" :assignedusers="assignedusers" :brands="brands" :pcats="pcats" />
+        <div >
+            <div class="bg-white w-[600px] py-6 sm:py-6 lg:py-6 mx-auto" id="pdiv">
+                <div class="bg-gray-300 p-2   text-center text-xl font-bold">Appliances Service Job Sheet</div>
+                <div class="flex border-2 border-gray-300 ">
+                    <div class="p-2">
+                        <p class="text-gray-600 text-xl font-bold">Shree Sai Services</p>
+                        <p>
+                            IN0118896,SHOP NO .235 PRIYANKA CITY
+                            PALACE,114, GODADARA RD,BEHIND MIDAS
+                            SQUARE,PARVATGAM, SURAT,395010-SURAT
+                            Contact No. 9898077528
+                        </p>
+                    </div>
+                    
                 </div>
-              </TabPanel>
-              <TabPanel>
-                <div class="p-2  bg-white">
-                <StatusUpdate :item="call" :engineers="engineers" :assignedusers="assignedusers" :brands="brands" :pcats="pcats" :statuses="statuses"  />
-                 </div>  
-              </TabPanel>
-            </TabPanels>
-          </TabGroup>
-    
+                <div class="flex border-2 border-gray-300">
+                    <div class="w-[38%] border-r-2 border-gray-300 text-center border-t-none">
+                        <label class="font-bold text-gray-600">Customer Information
+                        </label>
+                        <div class="flex border-gray-300 border border-t-2">
+                            <div class="w-[35%] border-r-2 border-gray-300"> Name</div>
+                            <div class="w-[75%]"> Udaykiram Chennna</div>
+                        </div>
+                        <div class="border-gray-300 border ">
+                            <div class="border-b-2  border-gray-300 "> Address</div>
+                            <div class=" text-left"> G-51/52, navmangalam complex
+                                citylight surat</div>
+                        </div>
+                        <div class="flex border-gray-300 border">
+                            <div class="w-[35%] border-r-2 border-gray-300"> City / Pincode </div>
+                            <div class="w-[75%]">  Surat / 395007</div>
+                        </div>
+                        <div class="flex border-gray-300 border ">
+                            <div class="w-[35%] border-r-2 border-gray-300"> Contact No. </div>
+                            <div class="w-[75%]"> 8238497619</div>
+                        </div>
+                        <div class="flex border-gray-300 border">
+                            <div class="w-[35%] border-r-2 border-gray-300"> EMail ID  </div>
+                            <div class="w-[75%]"> hafele.ccms@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="w-[68%]  border-gray-300 text-center border-t-none">
+                        <div class="flex">
+                            <div class="border-r-2 text-gray-600 font-bold text-sm border-b-2 border-gray-300 w-[22%]">Complaint No</div>
+                            <div class="border-r-2 text-gray-600 font-bold text-sm border-b-2 border-gray-300 w-[40%]">IN_A221128-726 </div>
+                            <div class="border-r-2 text-gray-600 font-bold text-sm border-b-2 border-gray-300 w-[15%]">Date:</div>
+                            <div class="border-r-2 text-gray-600 font-bold text-sm border-b-2 border-gray-300 w-[23%]">28/11/2022
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="border-r-2 text-gray-600 font-bold text-sm border-b-2 border-gray-300 w-[22%]">Product</div>
+                            <div class="border-r-2 text-gray-500  text-sm border-b-2 border-gray-300 w-[78%]">Dishwasher</div>
+                        </div>
+                        <div class="flex">
+                            <div class="border-r-2 text-gray-600 font-bold text-sm border-b-2 border-gray-300 w-[22%]">Brand</div>
+                            <div class="border-r-2 text-gray-500  text-sm border-b-2 border-gray-300 w-[78%]">HAffle</div>
+                        </div>
+                        <div class="flex">
+                            <div class="border-r-2 text-gray-600 font-bold text-sm border-b-2 border-gray-300 w-[22%]">Call Type </div>
+                            <div class="border-r-2 text-gray-500  text-sm border-b-2 border-gray-300 w-[78%]">Installation & Demo</div>
+                        </div>
+                        <div class="">
+                            <div class="border-r-2 text-gray-600 font-bold text-sm border-b-2 border-gray-300 ">ProblemRepoted (ByCustomer)</div>
+                            <div class=" text-gray-500  text-sm  border-gray-300 ">DishwasherDishwasher Dishwasher Dishwasher Dishwasher DishwasherDishwasher  Dishwasher</div>
+                        </div>
+                     
+                    </div>
+                </div>
+            </div>
+            <div @click="createPDF">createPDF</div>
+        </div>
+
 
     </AppLayout>
 </template>
 
 <script>
+    import html2canvas from 'html2canvas';
+    import jsPDF from 'jspdf';
     import {
         TransitionRoot,
         TransitionChild,
@@ -44,7 +92,9 @@
         Tab,
         TabPanels,
         TabPanel,
-        Disclosure, DisclosureButton, DisclosurePanel
+        Disclosure,
+        DisclosureButton,
+        DisclosurePanel
     } from '@headlessui/vue'
     import InputError from '@/Components/InputError.vue';
     import InputLabel from '@/Components/InputLabel.vue';
@@ -67,7 +117,9 @@
 
     import Form from 'vform'
     import axios from 'axios';
-    import { ChevronUpIcon } from '@heroicons/vue/20/solid'
+    import {
+        ChevronUpIcon
+    } from '@heroicons/vue/20/solid'
     export default {
         components: {
             Head,
@@ -92,7 +144,10 @@
             UpdateCustomer,
             UpdateCallDetails,
             StatusUpdate,
-            Disclosure, DisclosureButton, DisclosurePanel,ChevronUpIcon
+            Disclosure,
+            DisclosureButton,
+            DisclosurePanel,
+            ChevronUpIcon
 
         },
         props: {
@@ -101,10 +156,20 @@
             assignedusers: Object,
             brands: Object,
             pcats: Object,
-            statuses:Object
+            statuses: Object
         },
         data() {
             return {
+                createPDF() {
+                    window.html2canvas = html2canvas;
+                    var doc = jsPDF("p", "pt", "a4");
+                    
+                    doc.html(document.querySelector("#pdiv"), {
+                        callback: function (pdf) {
+                            pdf.save('mypdf.pdf');
+                        }
+                    });
+                },
                 categories: {
                     Recent: [{
                             id: 1,
@@ -285,4 +350,3 @@
 
 </script>
 <style src="@vueform/multiselect/themes/default.css"></style>
-	 

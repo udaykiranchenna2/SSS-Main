@@ -53,7 +53,7 @@
     import {
         Head,
         Link,
-    } from '@inertiajs/inertia-vue3';
+    } from '@inertiajs/vue3';
     import Checkbox from '@/Components/Checkbox.vue';
     import InputError from '@/Components/InputError.vue';
     import InputLabel from '@/Components/InputLabel.vue';

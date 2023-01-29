@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
-import { Inertia } from '@inertiajs/inertia';
-import { Link, useForm } from '@inertiajs/inertia-vue3';
+import { router } from '@inertiajs/vue3';
+import { Link, useForm } from '@inertiajs/vue3';
 import ActionMessage from '@/Components/ActionMessage.vue';
 import FormSection from '@/Components/FormSection.vue';
 import InputError from '@/Components/InputError.vue';
@@ -17,6 +17,7 @@ const props = defineProps({
 const form = useForm({
     _method: 'PUT',
     name: props.user.name,
+    lastname: props.user.lastname,
     email: props.user.email,
     photo: null,
 });
@@ -130,17 +131,27 @@ const clearPhotoFileInput = () => {
 
             <!-- Name -->
             <div class="col-span-6 sm:col-span-4">
-                <InputLabel for="name" value="Name" />
+                <InputLabel for="firstname" value="First name" />
                 <TextInput
-                    id="name"
+                    id="firstname"
                     v-model="form.name"
                     type="text"
                     class="mt-1 block w-full"
-                    autocomplete="name"
+                    autocomplete="firstname"
                 />
                 <InputError :message="form.errors.name" class="mt-2" />
             </div>
-
+            <div class="col-span-6 sm:col-span-4">
+                <InputLabel for="lastname" value="Last name" />
+                <TextInput
+                    id="lastname"
+                    v-model="form.lastname"
+                    type="text"
+                    class="mt-1 block w-full"
+                    autocomplete="lastname"
+                />
+                <InputError :message="form.errors.name" class="mt-2" />
+            </div>
             <!-- Email -->
             <div class="col-span-6 sm:col-span-4">
                 <InputLabel for="email" value="Email" />

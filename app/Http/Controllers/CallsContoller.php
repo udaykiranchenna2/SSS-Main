@@ -9,12 +9,31 @@ use Inertia\Inertia;
 use App\Models\Brand;
 use App\Models\Payment;
 use App\Models\Customer;
+use Barryvdh\DomPDF\Facade\Pdf;
 use App\Models\CallStatus;
 use Illuminate\Http\Request;
 use App\Models\ProductCategory;
 use Illuminate\Support\Facades\Auth;
 
 class CallsContoller extends Controller {
+	public function openPDF(Request $request) 
+		{
+			$invoiceItems = [
+				['item' => 'Website Design', 'amount' => 50.50],
+				['item' => 'Hosting (3 months)', 'amount' => 80.50],
+				['item' => 'Domain (1 year)', 'amount' => 10.50]
+			];
+			$invoiceData = [
+				'invoice_id' => 123,
+				'transaction_id' => 1234567,
+				'payment_method' => 'Paypal',
+				'creation_date' => date('M d, Y'),
+				'total_amount' => 141.50
+			];
+			// $pdf = PDF::loadView('jobSheets.emptySheet')->setOptions(['defaultFont' => 'sans-serif']);
+			// return $pdf->download('invoice.pdf');
+			return view('jobSheets.emptySheet',['invoiceItems' => $invoiceItems,'invoiceData' => $invoiceData]);
+		}
 	public function createCall(Request $request) {
 
 		$brands = BrandController::brandsForDropDown();
@@ -50,6 +69,7 @@ class CallsContoller extends Controller {
 
 		if ($request->customerid) {
 			$customer = Customer::where('customerid', $request->customerid)->first();
+
 			$customer->firstname = $request->firstname;
 			$customer->lastname = $request->lastname;
 			$customer->email = $request->email;
@@ -65,6 +85,8 @@ class CallsContoller extends Controller {
 			$customer->save();
 		} else {
 
+
+				
 			$customer = new Customer();
 			$customer->firstname = $request->firstname;
 			$customer->lastname = $request->lastname;
@@ -81,11 +103,13 @@ class CallsContoller extends Controller {
 			$customer->addedby = Auth::user()->id;
 			$customer->save();
 
-		}
+		};
+		$Flatter =  mb_strtoupper(mb_substr($request->calltype, 0, 1));
+		$callid = $Flatter . substr(date('Y'), -2) . date('md') . Call::whereDate('created_at', today())->count()+1;
 
 		$call = new Call();
 		$call->requestdate = Carbon::now();
-		$call->requestno = 'Call_' . $this->generateRandomString(10);
+		$call->requestno =$callid;
 		$call->customerid = $customer->customerid;
 		$call->calltype = $request->calltype;
 		$call->visitdate = Carbon::parse($request->visitdate);
@@ -134,16 +158,88 @@ class CallsContoller extends Controller {
 		$status->level = 1;
 		$status->addedby = Auth::user()->id;
 		$status->save();
-
 		return response()->json(['status' => true]);
 
 	}
+    public function closedCalls(Request $request)
+    {
+		$brands = BrandController::brandsForDropDown();
+		$pcats = ProductCategoryController::pcatsForDropDown();
+		$query = Call::query();
+		if($request->customerid != null && $request->customerid != ''){
+			$query->where('customerid', $request->customerid);
+		}
+		if($request->requestno != null && $request->requestno != ''){
+			$query->where('requestno', $request->requestno);
+		}
+		if($request->requestno != null && $request->requestno != ''){
+			$query->where('requestno', $request->requestno);
+		}
+		if($request->calltype != null && $request->calltype != ''){
+			$query->where('calltype', $request->calltype);
+		}
+		if($request->name != null && $request->name != ''){
+			$name = $request->name;
+			$query->whereHas('customer', function($query)  use ($name){
+				$query->where('firstname', 'like', '%'.$name.'%')->orWhere('lastname','like', '%'.$name.'%');
+			});
+		}
+		if($request->from != null && $request->from != ''){
+			$query->where('requestdate', '>=', $request->from);
+		}
+		if($request->to != null && $request->to != ''){
+			$query->where('requestdate', '<=', $request->to);
+		}
+
+		 $calls = $query->where('status','closed')
+		 ->with('customer')->with('statuses')->with('assignees')->with('user')->paginate(10);
+		 $query->toSql();
+		$engineers = User::where('role', 2)->pluck('name', 'id');
+		$assignedusers = User::where('role', 2)->select('name', 'id')->get();
+		return Inertia::render('Calls/closedCalls', [
+			'calls' => $calls,
+			'engineers' => $engineers,
+			'assignedusers' => $assignedusers,
+			'brands' => $brands,
+			'pcats' => $pcats,
+			'request'=>$request
+		]);
+
+		
+    }
 	public function openCalls(Request $request) {
 		//    return $calls = Call::where('status', 'open')->paginate(10);
 		$brands = BrandController::brandsForDropDown();
 		$pcats = ProductCategoryController::pcatsForDropDown();
 		$query = Call::query();
-		$calls = $query->with('customer')->with('statuses')->with('assignees')->with('user')->paginate(10);
+		if($request->customerid != null && $request->customerid != ''){
+			$query->where('customerid', $request->customerid);
+		}
+		if($request->requestno != null && $request->requestno != ''){
+			$query->where('requestno', $request->requestno);
+		}
+		if($request->requestno != null && $request->requestno != ''){
+			$query->where('requestno', $request->requestno);
+		}
+		if($request->calltype != null && $request->calltype != ''){
+			$query->where('calltype', $request->calltype);
+		}
+		if($request->name != null && $request->name != ''){
+			$name = $request->name;
+			$query->whereHas('customer', function($query)  use ($name){
+				$query->where('firstname', 'like', '%'.$name.'%')->orWhere('lastname','like', '%'.$name.'%');
+			});
+		}
+		if($request->from != null && $request->from != ''){
+			$query->where('requestdate', '>=', $request->from);
+		}
+		if($request->to != null && $request->to != ''){
+			$query->where('requestdate', '<=', $request->to);
+		}
+
+		 $calls = $query->where('status','open')
+		 ->with('customer')->with('statuses')->with('assignees')->with('user')->paginate(10);
+		 $query->toSql();
 		$engineers = User::where('role', 2)->pluck('name', 'id');
 		$assignedusers = User::where('role', 2)->select('name', 'id')->get();
 		return Inertia::render('Calls/Calls', [
@@ -152,6 +248,7 @@ class CallsContoller extends Controller {
 			'assignedusers' => $assignedusers,
 			'brands' => $brands,
 			'pcats' => $pcats,
+			'request'=>$request
 		]);
 	}
 	public function editCall(Request $request) {
@@ -220,6 +317,7 @@ class CallsContoller extends Controller {
 
 		$this->validate($request, [
 			'status' => 'required',
+			'visitdate' => 'required',
 		]);
         $data = [];
 
@@ -236,11 +334,12 @@ class CallsContoller extends Controller {
 		$status->attachments = json_encode($data);
 		$status->callid = $request->requestno;
 		$status->status = $request->status;
-		$status->visitdate = Carbon::parse($request->visitdate);
+		$status->visitdate = $request->visitdate?Carbon::parse($request->visitdate):null;
 		$status->sub_status = $request->sub_status;
 		$status->remark = $request->remark;
 		$status->status_json = null;
 		if ($status->status == 'Call Close') {
+        $call =  Call::where('requestno', $request->requestno)->update(['status'=>'closed']);
 			$status->type = 'Call Close';
 		} else {
 			$status->type = 'onVisit';
@@ -259,6 +358,23 @@ class CallsContoller extends Controller {
             $payment->save();
             
         }
+	}
+	public function pdfJobsheet(Request $request) {
+		
+
+		 $brands = BrandController::brandsForDropDown();
+		$pcats = ProductCategoryController::pcatsForDropDown();
+		$query = Call::query();
+		$calls = $query->where('status','closed')->with('customer')->with('statuses')->with('assignees')->with('user')->paginate(10);
+		$engineers = User::where('role', 2)->pluck('name', 'id');
+		$assignedusers = User::where('role', 2)->select('name', 'id')->get();
+		return Inertia::render('Calls/JobSheet', [
+			'calls' => $calls,
+			'engineers' => $engineers,
+			'assignedusers' => $assignedusers,
+			'brands' => $brands,
+			'pcats' => $pcats,
+		]);
 	}
 
 }

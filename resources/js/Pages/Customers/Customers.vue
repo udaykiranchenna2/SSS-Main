@@ -3,9 +3,9 @@
 
         <Head title="Create User" />
 
-        <div class="bg-gray-300 p-2 rounded-lg mt-1">
+        <!-- <div class="bg-gray-300 p-2 rounded-lg mt-1">
             <Link :href="'/create-users'" class="btn btn-primary">ADD</Link>
-        </div>
+        </div> -->
 
            <div class="py-2 px-5">
             <Table   :data="users.data" :meta="users"
@@ -17,11 +17,11 @@
            
             <template #cell(created_at)="{ item: user }">
                 {{dateFormat1(user.created_at)}}
-                </template>
+                </template> 
             <template #cell(actions)="{ item: user }">
-                <Link :href="'/user-customer'"  :data="{id:user.id}" class="btn btn-success text-white btn-sm mx-1">
+                <!-- <Link :href="'/user-customer'"  :data="{id:user.id}" class="btn btn-success text-white btn-sm mx-1">
                   Edit
-                </Link>
+                </Link> -->
                 <Link :href="'/create-call'"  :data="{customer:user.customerid}" class="btn btn-danger text-white btn-sm mx-1">
                     Add Call
                   </Link>
@@ -36,7 +36,7 @@
 </template>
 
 <script >
-import { Head, Link, useForm } from '@inertiajs/inertia-vue3';
+import { Head, Link, useForm } from '@inertiajs/vue3';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import { Table } from "@protonemedia/inertiajs-tables-laravel-query-builder";

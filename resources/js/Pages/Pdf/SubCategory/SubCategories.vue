@@ -29,7 +29,7 @@
 </template>
 <script>
 import AppLayout from '@/Layouts/AdminLayout.vue';
-import { Head, Link, useForm } from '@inertiajs/inertia-vue3';
+import { Head, Link, useForm } from '@inertiajs/vue3';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import { Table } from "@protonemedia/inertiajs-tables-laravel-query-builder";
 import {

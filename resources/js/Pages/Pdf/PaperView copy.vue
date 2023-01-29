@@ -37,7 +37,7 @@
         Head,
         Link,
         useForm
-    } from '@inertiajs/inertia-vue3';
+    } from '@inertiajs/vue3';
     import PrimaryButton from '@/Components/PrimaryButton.vue';
     import {
         Table

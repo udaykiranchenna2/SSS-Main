@@ -11,7 +11,7 @@
                 <Link :href="'/open-calls'"
                     :class="{ 'side-menu--active': $page.url === '/open-calls' || $page.url === '/create-call' }"
                     class="side-menu cursor-pointer">
-                <div class="side-menu__icon"> <i data-lucide="inbox"></i> </div>
+                <div class="side-menu__icon"> <i class="fa-sharp fa-solid fa-phone-volume"></i></div>
                 <div class="side-menu__title"> Calls </div>
                 </Link>
             </li>
@@ -19,7 +19,7 @@
                 <Link :href="'/users'"
                     :class="{ 'side-menu--active': $page.url === '/users' || $page.url === '/create-users' }"
                     class="side-menu cursor-pointer">
-                <div class="side-menu__icon"> <i data-lucide="inbox"></i> </div>
+                <div class="side-menu__icon"> <i class="fa-solid fa-user-secret"></i> </div>
                 <div class="side-menu__title"> Users </div>
                 </Link>
             </li>
@@ -27,8 +27,16 @@
                 <Link :href="'/customers'"
                     :class="{ 'side-menu--active': $page.url === '/customers'  }"
                     class="side-menu cursor-pointer">
-                <div class="side-menu__icon"> <i data-lucide="inbox"></i> </div>
+                <div class="side-menu__icon"><i class="fa-solid fa-users"></i> </div>
                 <div class="side-menu__title"> Customers </div>
+                </Link>
+            </li>
+            <li>
+                <Link :href="'/closed-calls'"
+                    :class="{ 'side-menu--active': $page.url === '/closed-calls'  }"
+                    class="side-menu cursor-pointer">
+                <div class="side-menu__icon"> <i class="fa-solid fa-phone"></i></div>
+                <div class="side-menu__title"> Closed calls </div>
                 </Link>
             </li>
 
@@ -729,7 +737,7 @@
 </template>
 
 <script>
-import { Head, Link, useForm } from '@inertiajs/inertia-vue3';
+import { Head, Link, useForm } from '@inertiajs/vue3';
 export default {
     components: {
         Link
