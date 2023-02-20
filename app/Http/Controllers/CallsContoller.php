@@ -30,8 +30,8 @@ class CallsContoller extends Controller {
 				'creation_date' => date('M d, Y'),
 				'total_amount' => 141.50
 			];
-			// $pdf = PDF::loadView('jobSheets.emptySheet')->setOptions(['defaultFont' => 'sans-serif']);
-			// return $pdf->download('invoice.pdf');
+			$pdf = PDF::loadView('jobSheets.emptySheet')->setOptions(['defaultFont' => 'sans-serif']);
+			return $pdf->download('invoice.pdf');
 			return view('jobSheets.emptySheet',['invoiceItems' => $invoiceItems,'invoiceData' => $invoiceData]);
 		}
 	public function createCall(Request $request) {
@@ -113,7 +113,14 @@ class CallsContoller extends Controller {
 		$call->customerid = $customer->customerid;
 		$call->calltype = $request->calltype;
 		$call->visitdate = Carbon::parse($request->visitdate);
-
+		$fileArray = [];
+			foreach ($request->file('files') as $file) {
+				$file_name = time().'_'.$file->getClientOriginalName();
+                $file_path = $file->storeAs('/public/callfiles', $file_name);
+                $fileArray[] = time().'_'.$file->getClientOriginalName();
+				$call->files = json_encode($fileArray);
+			}
+			 $fileArray;	
 		if ($request->brandname == 'Other') {
 			$checkBrand = Brand::where('brandname', $request->extrabrand)->first();
 			$brand = new Brand();
@@ -207,6 +214,7 @@ class CallsContoller extends Controller {
 
 		
     }
+	
 	public function openCalls(Request $request) {
 		//    return $calls = Call::where('status', 'open')->paginate(10);
 		$brands = BrandController::brandsForDropDown();
@@ -237,12 +245,60 @@ class CallsContoller extends Controller {
 			$query->where('requestdate', '<=', $request->to);
 		}
 
-		 $calls = $query->where('status','open')
+		 $calls = $query->orderBy('created_at','DESC')->where('status','open')
 		 ->with('customer')->with('statuses')->with('assignees')->with('user')->paginate(10);
 		 $query->toSql();
 		$engineers = User::where('role', 2)->pluck('name', 'id');
 		$assignedusers = User::where('role', 2)->select('name', 'id')->get();
 		return Inertia::render('Calls/Calls', [
+			'calls' => $calls,
+			'engineers' => $engineers,
+			'assignedusers' => $assignedusers,
+			'brands' => $brands,
+			'pcats' => $pcats,
+			'request'=>$request
+		]);
+	}
+	public function dueCalls(Request $request) {
+		//    return $calls = Call::where('status', 'open')->paginate(10);
+		$brands = BrandController::brandsForDropDown();
+		$pcats = ProductCategoryController::pcatsForDropDown();
+		$query = Call::query();
+		if($request->customerid != null && $request->customerid != ''){
+			$query->where('customerid', $request->customerid);
+		}
+		if($request->requestno != null && $request->requestno != ''){
+			$query->where('requestno', $request->requestno);
+		}
+		if($request->requestno != null && $request->requestno != ''){
+			$query->where('requestno', $request->requestno);
+		}
+		if($request->calltype != null && $request->calltype != ''){
+			$query->where('calltype', $request->calltype);
+		}
+		if($request->name != null && $request->name != ''){
+			$name = $request->name;
+			$query->whereHas('customer', function($query)  use ($name){
+				$query->where('firstname', 'like', '%'.$name.'%')->orWhere('lastname','like', '%'.$name.'%');
+			});
+		}
+			$query->whereHas('payment', function($query){
+				$query->where('paymentStatus', 'Due');
+			});
+		
+		if($request->from != null && $request->from != ''){
+			$query->where('requestdate', '>=', $request->from);
+		}
+		if($request->to != null && $request->to != ''){
+			$query->where('requestdate', '<=', $request->to);
+		}
+
+		 $calls = $query->where('status','closed')
+		 ->with('customer')->with('statuses')->with('assignees')->with('user')->paginate(10);
+		 $query->toSql();
+		$engineers = User::where('role', 2)->pluck('name', 'id');
+		$assignedusers = User::where('role', 2)->select('name', 'id')->get();
+		return Inertia::render('Calls/DueCalls', [
 			'calls' => $calls,
 			'engineers' => $engineers,
 			'assignedusers' => $assignedusers,
@@ -355,6 +411,7 @@ class CallsContoller extends Controller {
             $payment->mode =$request->mode;
             $payment->amount =$request->amount;
             $payment->paid =$request->paid;
+            $payment->paymentStatus =$request->paymentStatus;
             $payment->save();
             
         }

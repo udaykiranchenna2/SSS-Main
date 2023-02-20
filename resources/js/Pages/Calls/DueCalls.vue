@@ -188,7 +188,7 @@
                                         </td>
                                         <td
                                             class="px-3 py-4 text-center text-sm font-medium text-gray-800 whitespace-nowrap">
-                                            <i class="cursor-pointer fa-solid fa-eye" @click="openViewModal(item)"></i>
+                                            <i class="cursor-pointer fa-solid fa-eye"></i>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -296,48 +296,6 @@
                     </div>
                 </Dialog>
             </TransitionRoot>
-            <TransitionRoot appear :show="openView" as="template">
-                <Dialog as="div" @close="closeViewModal" class="relative z-10">
-                    <TransitionChild as="template" enter="duration-300 ease-out" enter-from="opacity-0"
-                        enter-to="opacity-100" leave="duration-200 ease-in" leave-from="opacity-100"
-                        leave-to="opacity-0">
-                        <div class="fixed inset-0 bg-black bg-opacity-25" />
-                    </TransitionChild>
-
-                    <div class="fixed inset-0 overflow-y-auto w-full">
-                        <div class="flex min-h-full items-center justify-center p-4 text-center">
-                            <TransitionChild as="template" enter="duration-300 ease-out" enter-from="opacity-0 scale-95"
-                                enter-to="opacity-100 scale-100" leave="duration-200 ease-in"
-                                leave-from="opacity-100 scale-100" leave-to="opacity-0 scale-95">
-                                <DialogPanel
-                                    class="w-full max-w-3xl transform overflow-hidden rounded-2xl bg-white pb-6 text-left align-middle shadow-xl transition-all">
-                                    <DialogTitle as="h3" class="text-lg font-medium leading-6 text-gray-900">
-
-                                        <div class="flex justify-between bg-gray-300  py-2  px-6">
-                                            <div>
-                                                Files
-                                            </div>
-                                            <div @click="closeViewModal" class="cursor-pointer">
-                                                <i class="fa-solid fa-x"></i>
-                                            </div>
-                                        </div>
-                                    </DialogTitle>
-                                    <div class="mt-2 px-6">
-                                             <div class="grid grid-cols-3" >
-                                                <div v-for="(item, index) in jsonDecoder(activeItem.files) " :key="index" class="hover:text-blue-500 cursor-pointer text-blue-900">
-                                                <div @click="downloadImage(item)">{{item}}</div>
-                                            </div>
-                                             </div>
-                                       
-                                    </div>
-
-
-                                </DialogPanel>
-                            </TransitionChild>
-                        </div>
-                    </div>
-                </Dialog>
-            </TransitionRoot>
 
         </div>
 
@@ -376,7 +334,6 @@
 
     import Form from 'vform'
     import axios from 'axios';
-    import baseUrl from '../../baseUrl'
     export default {
         components: {
             Head,
@@ -411,7 +368,6 @@
         },
         data() {
             return {
-                baseURL:baseUrl,
                 loading: false,
                 form: new Form({
 
@@ -430,7 +386,6 @@
 
                 }),
                 isOpen: false,
-                
                 openEdit: false,
                 openView: false,
                 selectedAllocation: [],
@@ -438,8 +393,6 @@
                 pcatsList: this.pcats,
                 brandsList: this.brands,
                 openSearchVal: true,
-                activeItem:[],
-                storagePath: '/storage/callfiles/',
 
             }
         },
@@ -469,29 +422,6 @@
                 this.selectedAllocation = item;
                 this.isOpen = true;
             },
-            openViewModal(item) {
-                this.activeItem = item;
-                this.openView = true;
-            },
-            closeViewModal(){
-                this.openView = false;
-
-            },
-            async downloadImage(image) {
-      
-                let url = this.baseURL+'/'+this.storagePath+image;
-                console.log(url);
-                const response = await fetch(url);
-                const blob = await response.blob();
-
-                const link = document.createElement('a');
-                link.href = URL.createObjectURL(blob);
-                link.download = image;
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-                },
-
             dateFormat1(date) {
                 var options = {
                     weekday: 'long',
@@ -564,15 +494,6 @@
                         }
                     })
             },
-            jsonDecoder(item){
-                if (item) {
-                    item =  JSON.parse(item)
-                return item;
-
-                }else{
-                    return [];
-                }
-            },  
             calltype(type) {
                 if (type == 'firstdemoinstalation') {
                     return 'First demo and installation';

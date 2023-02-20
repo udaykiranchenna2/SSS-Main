@@ -71,7 +71,7 @@
                                         </div>
                                         <div class="mt-4" v-if="form.status == 'Call Close'">
                                             <InputLabel for="name" value="Total Amount" />
-                                            <TextInput type="number" id="paymentStatus" v-model="form.amount"
+                                            <TextInput type="number" id="" v-model="form.amount"
                                                 class="mt-1 block w-full p-2" autofocus autocomplete="amount" />
                                             <div />
                                             <InputError class="mt-2" v-if="form.errors.has('amount')"
@@ -233,9 +233,11 @@
                                             class="px-3 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
                                             <span v-if="item.created_at">{{ dateFormat1(item.created_at) }}</span>
                                         </td>
-                                        <td
-                                            class="px-3 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
-                                           View
+                                        <td class="px-3 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
+                                           <div @click="openViewModal">
+
+                                            
+                                           </div>
                                         </td>
 
 
@@ -247,6 +249,43 @@
                             </table>
                         </DisclosurePanel>
                     </Disclosure>
+                      <TransitionRoot appear :show="openView" as="template">
+                <Dialog as="div" @close="closeViewModal" class="relative z-10">
+                    <TransitionChild as="template" enter="duration-300 ease-out" enter-from="opacity-0"
+                        enter-to="opacity-100" leave="duration-200 ease-in" leave-from="opacity-100"
+                        leave-to="opacity-0">
+                        <div class="fixed inset-0 bg-black bg-opacity-25" />
+                    </TransitionChild>
+
+                    <div class="fixed inset-0 overflow-y-auto w-full">
+                        <div class="flex min-h-full items-center justify-center p-4 text-center">
+                            <TransitionChild as="template" enter="duration-300 ease-out" enter-from="opacity-0 scale-95"
+                                enter-to="opacity-100 scale-100" leave="duration-200 ease-in"
+                                leave-from="opacity-100 scale-100" leave-to="opacity-0 scale-95">
+                                <DialogPanel
+                                    class="w-full max-w-3xl transform overflow-hidden rounded-2xl bg-white pb-6 text-left align-middle shadow-xl transition-all">
+                                    <DialogTitle as="h3" class="text-lg font-medium leading-6 text-gray-900">
+
+                                        <div class="flex justify-between bg-gray-300  py-2  px-6">
+                                            <div>
+                                                Files
+                                            </div>
+                                            <div @click="closeViewModal" class="cursor-pointer">
+                                                <i class="fa-solid fa-x"></i>
+                                            </div>
+                                        </div>
+                                    </DialogTitle>
+                                    <div class="mt-2 px-6">
+                                             helloo
+                                    </div>
+
+
+                                </DialogPanel>
+                            </TransitionChild>
+                        </div>
+                    </div>
+                </Dialog>
+            </TransitionRoot>
                 </div>
             </div>
 
@@ -348,7 +387,6 @@
 
                 }),
 
-
                 isOpen: false,
                 openEdit: false,
                 openView: false,
@@ -407,7 +445,13 @@
             }
         },
         methods: {
+            closeViewModal(){
+                this.openView = false;
 
+            },
+            openViewModal(item) {
+                this.openView = true;
+            },
 
             dateFormat1(date) {
                 var options = {

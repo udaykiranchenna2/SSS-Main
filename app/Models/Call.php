@@ -18,6 +18,7 @@ class Call extends Model
         'productcategory',
         'status',
         'addedby',
+        'files',
     ];
     public function customer()
     {
@@ -34,5 +35,13 @@ class Call extends Model
     public function user()
     {
         return $this->belongsTo(User::class,'addedby','id');
+    }
+    public function paymentdata()
+    {
+        return $this->hasOne(Payment::class,'callid','requestno')->orderby('created_at', 'desc');
+    }
+    public function payment()
+    {
+        return $this->hasOne(Payment::class,'callid','requestno')->where('paymentStatus', 'Due')->orderby('created_at', 'desc');
     }
 }

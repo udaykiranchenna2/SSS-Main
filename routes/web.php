@@ -53,6 +53,7 @@ Route::middleware([
     Route::get('/create-call', [CallsContoller::class, 'createCall'])->name('/create-call');
     Route::get('/open-calls', [CallsContoller::class, 'openCalls'])->name('/open-calls');
     Route::get('/closed-calls', [CallsContoller::class, 'closedCalls'])->name('/closed-calls');
+    Route::get('/due-calls', [CallsContoller::class, 'dueCalls'])->name('/due-calls');
     Route::get('/edit-call', [CallsContoller::class, 'editCall'])->name('/edit-call');
     Route::post('/update-call', [CallsContoller::class, 'updateCall'])->name('/update-call');
     Route::post('/create-store', [CallsContoller::class, 'storeCall'])->name('/create-store');

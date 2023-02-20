@@ -162,13 +162,13 @@
                                         <div />
                                         <InputError class="mt-2" v-if="form.errors.has('extraproductcategory')" :message="form.errors.get('extraproductcategory')" />
                                     </div>
+                                    
                                     <div class="mt-4">
                                         <InputLabel for="description" value="Description" />
                                             <textarea   id="description" v-model="form.description" type="text"   class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm w-full">\
                                             </textarea>
                                         <InputError class="mt-2" v-if="form.errors.has('description')"
                                             :message="form.errors.get('description')" />
-                
                                     </div>
                                     <div class="mt-5">
                                         <InputLabel for="VisitDateTime" value="Visit Date Time" />
@@ -176,6 +176,13 @@
                                         <div />
                                         <InputError class="mt-2" v-if="form.errors.has('visitdate')"
                                             :message="form.errors.get('visitdate')" />
+                                    </div>
+                                     <div class="mt-5 col-span-3">
+                                        <InputLabel for="productcategory" value="Add files" />
+                                        <TextInput id="files" type="file" class="mt-1 block w-full" name="files" multiple
+                                        v-on:change="onFileChange"/>
+                                        <div />
+                                        <InputError class="mt-2" v-if="form.errors.has('extraproductcategory')" :message="form.errors.get('extraproductcategory')" />
                                     </div>
                                 </div>
                             </div>
@@ -238,7 +245,8 @@ export default {
                 password: '',
                 password_confirmation: '',
                 terms: false,
-                role: 1
+                role: 1,
+                files :[],
             }),
             pcatsList:this.pcats,
             brandsList:this.brands,
@@ -257,6 +265,10 @@ export default {
                  }  
                 })
         },
+        onFileChange(e) {
+                    
+                    this.form.files = e.target.files;
+},
         bindingCustomer()
         {
             if(this.customer)
