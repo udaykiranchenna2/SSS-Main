@@ -26,7 +26,7 @@ class Call extends Model
     }
     public function statuses()
     {
-        return $this->hasMany(CallStatus::class,'callid','requestno')->orderby('created_at', 'desc');
+        return $this->hasMany(CallStatus::class,'callid','requestno')->with('payments')->orderby('created_at', 'desc');
     }
     public function assignees()
     {

@@ -190,8 +190,8 @@
 
         <body >
     <table style="border-collapse:collapse;margin:auto;" cellspacing="0">
-        <tr style="height:19pt">
-            <td style="width:558px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+        <tr style="height:19px">
+            <td style="width:558px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="9" bgcolor="#EFEEEE">
                 <p class="s1 p-2"
                                 style="text-indent: 0px;line-height: 17px;text-align: center; ">
@@ -199,7 +199,7 @@
             </td>
         </tr>
         <tr style="">
-            <td style="width:197px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:197px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="3">
                 <p class="s2" style="padding-left: 1px;text-indent: 0px;line-height: 13px;text-align: left;">Shree Sai
                     Services</p>
@@ -212,7 +212,7 @@
                     style="padding-top: 5px;padding-left: 1px;text-indent: 0px;line-height: 14px;text-align: left;">
                     Authorised Service Center for <span class="s5">HAFELE</span></p>
             </td>
-            <td style="width:303px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1pt"
+            <td style="width:303px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px"
                 colspan="5">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
                 <p class="s6" style="padding-left: 1px;text-indent: 0px;line-height: 10px;text-align: left;">Customer
@@ -222,33 +222,33 @@
                         customercare@hafeleindia.com</a></p>
             </td>
             <td
-                style="width:58px;border-top-style:solid;border-top-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:58px;border-top-style:solid;border-top-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
                 <p class="s8" style="padding-top: 4px;padding-left: 25px;text-indent: 0px;text-align: left;">ASJB V.3
                 </p>
             </td>
         </tr>
         <tr style="height:17px">
-            <td style="width:197px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:197px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="3">
                 <p class="s9" style="padding-top: 1px;padding-left: 4px;text-indent: 0px;text-align: left;">Customer
                     Information</p>
             </td>
-            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-top: 2px;padding-left: 5px;text-indent: 0px;text-align: left;">Complaint
                     No.</p>
             </td>
-            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-top: 2px;padding-left: 5px;text-indent: 0px;text-align: left;">
                     IN_A221128-726</p>
             </td>
-            <td style="width:46px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1pt"
+            <td style="width:46px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px"
                 bgcolor="#EFEEEE">
                 <p class="s6" style="padding-top: 2px;padding-left: 5px;text-indent: 0px;text-align: left;">Date:</p>
             </td>
-            <td style="width:58px;border-top-style:solid;border-top-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:58px;border-top-style:solid;border-top-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 bgcolor="#EFEEEE">
                 <p class="s6" style="padding-top: 2px;padding-left: 3px;text-indent: 0px;text-align: left;">28/11/2022
                 </p>
@@ -256,24 +256,24 @@
         </tr>
         <tr style="height:17px">
             <td
-                style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p class="s6" style="padding-top: 2px;padding-left: 4px;text-indent: 0px;text-align: left;">Name</p>
             </td>
-            <td style="width:132px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:132px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p class="s6" style="padding-top: 2px;padding-left: 5px;text-indent: 0px;text-align: left;">Vaibhav Baid
                 </p>
             </td>
-            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-top: 2px;padding-left: 5px;text-indent: 0px;text-align: left;">Product</p>
             </td>
-            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-top: 2px;padding-left: 5px;text-indent: 0px;text-align: left;">Dishwashers
                 </p>
             </td>
-            <td style="width:104px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:104px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" rowspan="5">
                 <p class="s11"
                     style="padding-top: 2px;padding-left: 5px;padding-right: 15px;text-indent: 0px;line-height: 162%;text-align: left;">
@@ -315,68 +315,68 @@
             </td>
         </tr>
         <tr style="height:17px">
-            <td style="width:197px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:197px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="3" rowspan="6">
                 <p class="s12"
                     style="padding-top: 2px;padding-left: 3px;text-indent: 1px;line-height: 94%;text-align: left;">
                     Address : <span class="s13">G-51/52, navmangalam complex citylight surat</span></p>
             </td>
-            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-top: 2px;padding-left: 5px;text-indent: 0px;text-align: left;">Brand</p>
             </td>
-            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-top: 2px;padding-left: 5px;text-indent: 0px;text-align: left;">HAFELE
                     APPLIANCES</p>
             </td>
         </tr>
         <tr style="height:18px">
-            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-top: 2px;padding-left: 5px;text-indent: 0px;text-align: left;">Article No.
                 </p>
             </td>
-            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-top: 2px;padding-left: 5px;text-indent: 0px;text-align: left;">538.21.150
                 </p>
             </td>
         </tr>
         <tr style="height:18px">
-            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-top: 2px;padding-left: 5px;text-indent: 0px;text-align: left;">Serial No.
                 </p>
             </td>
-            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
         </tr>
         <tr style="height:18px">
-            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-top: 3px;padding-left: 5px;text-indent: 0px;text-align: left;">Installation
                     Date</p>
             </td>
-            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
         </tr>
         <tr style="height:17px">
-            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-top: 2px;padding-left: 5px;text-indent: 0px;text-align: left;">Purchase
                     Date</p>
             </td>
-            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-top: 2px;padding-left: 5px;text-indent: 0px;text-align: left;">20/03/2022
                 </p>
             </td>
-            <td style="width:104px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:104px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" rowspan="5">
                 <p class="s11"
                     style="padding-top: 2px;padding-left: 5px;padding-right: 27px;text-indent: 0px;line-height: 162%;text-align: left;">
@@ -416,34 +416,34 @@
                     </span>AMC</p>
             </td>
         </tr>
-        <tr style="height:19pt">
-            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+        <tr style="height:19px">
+            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-top: 2px;padding-left: 5px;text-indent: 0px;text-align: left;">Invoice No.
                 </p>
             </td>
-            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
         </tr>
         <tr style="height:17px">
             <td
-                style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p class="s6" style="padding-top: 3px;padding-left: 4px;text-indent: 0px;text-align: left;">City /
                     Pincode</p>
             </td>
-            <td style="width:132px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:132px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p class="s6" style="padding-top: 3px;padding-left: 5px;text-indent: 0px;text-align: left;">Surat /
                     395007</p>
             </td>
-            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-top: 1px;padding-left: 5px;text-indent: 0px;text-align: left;">Dealer Name
                 </p>
             </td>
-            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-top: 1px;padding-left: 5px;text-indent: 0px;text-align: left;">Ideal
                     Hardware</p>
@@ -451,83 +451,83 @@
         </tr>
         <tr style="height:18px">
             <td
-                style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p class="s6" style="padding-top: 3px;padding-left: 4px;text-indent: 0px;text-align: left;">Contact No.
                 </p>
             </td>
-            <td style="width:132px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:132px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p class="s6" style="padding-top: 3px;padding-left: 5px;text-indent: 0px;text-align: left;">8238497619
                 </p>
             </td>
-            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-top: 2px;padding-left: 5px;text-indent: 0px;text-align: left;">Location</p>
             </td>
-            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-top: 2px;padding-left: 5px;text-indent: 0px;text-align: left;">Surat</p>
             </td>
         </tr>
         <tr style="height:17px">
             <td
-                style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p class="s6" style="padding-top: 2px;padding-left: 4px;text-indent: 0px;text-align: left;">E Mail ID
                 </p>
             </td>
-            <td style="width:132px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:132px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p style="padding-top: 2px;padding-left: 5px;text-indent: 0px;text-align: left;"><a
                         href="mailto:hafele.ccms@gmail.com" class="s7">hafele.ccms@gmail.com</a></p>
             </td>
-            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:75px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
-            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:182px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
         </tr>
-        <tr style="height:81pt">
-            <td style="width:168px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+        <tr style="height:81px">
+            <td style="width:168px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="3">
                 <p class="s9" style="padding-left: 1px;text-indent: 0px;line-height: 10px;text-align: left;">Problem
                     Repoted (By Customer)</p>
             </td>
-            <td style="width:195px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:195px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="4">
                 <p class="s9" style="padding-left: 1px;text-indent: 0px;line-height: 10px;text-align: left;">Defect
                     Detected (By Engineer)</p>
             </td>
-            <td style="width:195px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:195px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p class="s9" style="padding-left: 1px;text-indent: 0px;line-height: 10px;text-align: left;">Repair
                     Carried (By Engineer)</p>
             </td>
         </tr>
-        <tr style="height:14pt">
-            <td style="width:109px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+        <tr style="height:14px">
+            <td style="width:109px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 bgcolor="#EFEEEE">
                 <p class="s6" style="padding-left: 25px;text-indent: 0px;text-align: left;">Engineer Name</p>
             </td>
-            <td style="width:67px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:67px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-left: 16px;text-indent: 0px;text-align: left;">Visit date</p>
             </td>
-            <td style="width:49px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:49px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 bgcolor="#EFEEEE">
                 <p class="s6" style="padding-left: 12px;text-indent: 0px;text-align: left;">In time</p>
             </td>
-            <td style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-left: 17px;text-indent: 0px;text-align: left;">Out time</p>
             </td>
-            <td style="width:152px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:152px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 bgcolor="#EFEEEE">
                 <p class="s6" style="padding-left: 35px;text-indent: 0px;text-align: left;">Remarks / Follow ups</p>
             </td>
-            <td style="width:116px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:116px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" rowspan="6">
                 <p class="s9" style="padding-left: 1px;text-indent: 0px;line-height: 10px;text-align: left;">Current
                     safety test result</p>
@@ -556,124 +556,124 @@
                     Input voltage (L-N) : Earthing Voltage (E-N) :</p>
             </td>
         </tr>
-        <tr style="height:15pt">
+        <tr style="height:15px">
             <td
-                style="width:109px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:109px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
-            <td style="width:67px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:67px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
             <td
-                style="width:49px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:49px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
-            <td style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
             <td
-                style="width:152px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:152px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
         </tr>
-        <tr style="height:15pt">
+        <tr style="height:15px">
             <td
-                style="width:109px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:109px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
-            <td style="width:67px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:67px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
             <td
-                style="width:49px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:49px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
-            <td style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
             <td
-                style="width:152px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:152px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
         </tr>
-        <tr style="height:15pt">
+        <tr style="height:15px">
             <td
-                style="width:109px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:109px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
-            <td style="width:67px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:67px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
             <td
-                style="width:49px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:49px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
-            <td style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
             <td
-                style="width:152px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:152px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
         </tr>
-        <tr style="height:15pt">
+        <tr style="height:15px">
             <td
-                style="width:109px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:109px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
-            <td style="width:67px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:67px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
             <td
-                style="width:49px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:49px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
-            <td style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
             <td
-                style="width:152px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:152px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
         </tr>
-        <tr style="height:14pt">
-            <td style="width:442px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+        <tr style="height:14px">
+            <td style="width:442px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="7">
                 <p class="s9" style="padding-left: 3px;text-indent: 0px;line-height: 12px;text-align: left;">Parts
                     Replacements :</p>
             </td>
         </tr>
-        <tr style="height:14pt">
-            <td style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+        <tr style="height:14px">
+            <td style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 bgcolor="#EFEEEE">
                 <p class="s6" style="padding-left: 12px;text-indent: 0px;text-align: left;">Article No.</p>
             </td>
-            <td style="width:71px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:71px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 bgcolor="#EFEEEE">
-                <p class="s6" style="padding-left: 13px;text-indent: 0px;text-align: left;">Description</p>
+                <p class="s6" style="padding-left: 13px;text-indent: 0px;text-align: left;">Descripxion</p>
             </td>
-            <td style="width:27px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:27px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 bgcolor="#EFEEEE">
                 <p class="s6" style="padding-left: 6px;text-indent: 0px;text-align: left;">Qty</p>
             </td>
-            <td style="width:76px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:76px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 bgcolor="#EFEEEE">
                 <p class="s6" style="padding-left: 27px;padding-right: 26px;text-indent: 0px;text-align: center;">Rate
                 </p>
             </td>
-            <td style="width:51px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:51px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-left: 4px;text-indent: 0px;text-align: left;">Total Value</p>
             </td>
-            <td style="width:164px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1pt"
+            <td style="width:164px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px"
                 rowspan="11">
                 <p class="s15" style="padding-left: 2px;text-indent: 0px;line-height: 9px;text-align: left;">
                     Installation Check List</p>
@@ -695,7 +695,7 @@
                 <p class="s6" style="padding-top: 3px;padding-left: 2px;text-indent: 0px;text-align: left;">If no,
                     Specify the reason:</p>
             </td>
-            <td style="width:46px;border-top-style:solid;border-top-width:1px;border-bottom-style:solid;border-bottom-width:1pt"
+            <td style="width:46px;border-top-style:solid;border-top-width:1px;border-bottom-style:solid;border-bottom-width:1px"
                 rowspan="11">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
                 <p class="s3"
@@ -778,7 +778,7 @@
                         </table>
                     </span>Yes</p>
             </td>
-            <td style="width:58px;border-top-style:solid;border-top-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:58px;border-top-style:solid;border-top-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 rowspan="11">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
                 <p class="s3"
@@ -794,168 +794,168 @@
                     Not Provided No</p>
             </td>
         </tr>
-        <tr style="height:15pt">
+        <tr style="height:15px">
             <td
-                style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
             <td
-                style="width:71px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:71px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
             <td
-                style="width:27px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:27px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
             <td
-                style="width:76px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:76px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
-            <td style="width:51px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:51px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
         </tr>
-        <tr style="height:15pt">
+        <tr style="height:15px">
             <td
-                style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
             <td
-                style="width:71px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:71px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
             <td
-                style="width:27px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:27px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
             <td
-                style="width:76px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:76px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
-            <td style="width:51px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:51px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
         </tr>
-        <tr style="height:15pt">
+        <tr style="height:15px">
             <td
-                style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
             <td
-                style="width:71px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:71px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
             <td
-                style="width:27px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:27px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
             <td
-                style="width:76px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:76px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
-            <td style="width:51px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:51px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
         </tr>
-        <tr style="height:15pt">
+        <tr style="height:15px">
             <td
-                style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:65px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
             <td
-                style="width:71px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:71px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
             <td
-                style="width:27px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:27px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
             <td
-                style="width:76px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:76px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
-            <td style="width:51px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:51px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
         </tr>
-        <tr style="height:14pt">
-            <td style="width:163px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+        <tr style="height:14px">
+            <td style="width:163px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p class="s9" style="padding-left: 3px;text-indent: 0px;line-height: 12px;text-align: left;">Payment
                     Details:</p>
             </td>
-            <td style="width:76px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:76px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-left: 27px;padding-right: 26px;text-indent: 0px;text-align: center;">Total
                 </p>
             </td>
-            <td style="width:51px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:51px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
         </tr>
-        <tr style="height:15pt">
-            <td style="width:163px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+        <tr style="height:15px">
+            <td style="width:163px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p class="s6" style="padding-left: 3px;text-indent: 0px;text-align: left;">Mode of Payment - Cheque / DD
                     /Cash</p>
             </td>
-            <td style="width:76px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:76px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p class="s6" style="padding-left: 9px;text-indent: 0px;text-align: left;">Service Charge</p>
             </td>
-            <td style="width:51px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:51px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
         </tr>
-        <tr style="height:15pt">
-            <td style="width:163px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+        <tr style="height:15px">
+            <td style="width:163px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p class="s6" style="padding-left: 3px;text-indent: 0px;text-align: left;">Cheque / DD No. -</p>
             </td>
-            <td style="width:76px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:76px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p class="s6" style="padding-left: 4px;text-indent: 0px;text-align: left;">Transport / others</p>
             </td>
-            <td style="width:51px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:51px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
         </tr>
-        <tr style="height:15pt">
-            <td style="width:163px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+        <tr style="height:15px">
+            <td style="width:163px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p class="s6" style="padding-left: 3px;text-indent: 0px;text-align: left;">Invoice No. &amp; Date -</p>
             </td>
-            <td style="width:76px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:76px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p class="s6" style="padding-left: 21px;text-indent: 0px;text-align: left;">Net Total</p>
             </td>
-            <td style="width:51px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:51px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2" bgcolor="#EFEEEE">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
         </tr>
-        <tr style="height:23pt">
-            <td style="width:290px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+        <tr style="height:23px">
+            <td style="width:290px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="6">
                 <p class="s6" style="padding-left: 3px;text-indent: 0px;text-align: left;">Amount in Words -</p>
             </td>
         </tr>
-        <tr style="height:35pt">
+        <tr style="height:35px">
             <td
-                style="width:109px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1pt">
+                style="width:109px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
                 <p class="s3" style="padding-left: 2px;text-indent: 0px;text-align: left;">Customer Satisfaction rating
                     :</p>
             </td>
             <td
-                style="width:54px;border-top-style:solid;border-top-width:1px;border-bottom-style:solid;border-bottom-width:1pt">
+                style="width:54px;border-top-style:solid;border-top-width:1px;border-bottom-style:solid;border-bottom-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
                 <p class="s3" style="text-indent: 0px;text-align: left;"><span>
                         <table border="0" cellspacing="0" cellpadding="0">
@@ -968,39 +968,39 @@
                     </span>Excellent</p>
             </td>
             <td
-                style="width:34px;border-top-style:solid;border-top-width:1px;border-bottom-style:solid;border-bottom-width:1pt">
+                style="width:34px;border-top-style:solid;border-top-width:1px;border-bottom-style:solid;border-bottom-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
                 <p class="s3" style="padding-left: 2px;text-indent: 0px;text-align: left;">Good</p>
             </td>
             <td
-                style="width:42px;border-top-style:solid;border-top-width:1px;border-bottom-style:solid;border-bottom-width:1pt">
+                style="width:42px;border-top-style:solid;border-top-width:1px;border-bottom-style:solid;border-bottom-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
                 <p class="s3" style="padding-left: 1px;text-indent: 0px;text-align: left;">Average</p>
             </td>
             <td
-                style="width:33px;border-top-style:solid;border-top-width:1px;border-bottom-style:solid;border-bottom-width:1pt">
+                style="width:33px;border-top-style:solid;border-top-width:1px;border-bottom-style:solid;border-bottom-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
                 <p class="s3" style="padding-left: 1px;text-indent: 0px;text-align: left;">Poor</p>
             </td>
             <td
-                style="width:18px;border-top-style:solid;border-top-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt">
+                style="width:18px;border-top-style:solid;border-top-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
             </td>
         </tr>
-        <tr style="height:83pt">
-            <td style="width:290px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+        <tr style="height:83px">
+            <td style="width:290px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="6">
                 <p class="s6" style="padding-left: 3px;text-indent: 0px;text-align: left;">Customer Feedback /
                     Suggestion :</p>
             </td>
-            <td style="width:268px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:268px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="3">
                 <p class="s6" style="padding-top: 1px;padding-left: 2px;text-indent: 0px;text-align: left;">Additional
                     Remark / Engineer Recommendation :</p>
             </td>
         </tr>
-        <tr style="height:75pt">
-            <td style="width:225px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+        <tr style="height:75px">
+            <td style="width:225px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="4">
                 <p class="s16" style="padding-left: 2px;text-indent: 0px;line-height: 9px;text-align: left;">Customer
                     Information:</p>
@@ -1008,9 +1008,9 @@
                     <li data-list-text="1.">
                         <p class="s14"
                             style="padding-top: 1px;padding-left: 2px;text-indent: 0px;line-height: 89%;text-align: left;">
-                            This is only the Job card Not the Invoice, If anypayment made kindly collect receipt /
+                            This is only the Job card Not the Invoice, If anypayment made kindly collect receipx /
                             invoice separatelyfrom concern Engineer, kindly ensure the information provided in Payment
-                            details column is matching with Invoice / Receipt provided to you</p>
+                            details column is matching with Invoice / Receipx provided to you</p>
                     </li>
                     <li data-list-text="2.">
                         <p class="s14"
@@ -1022,7 +1022,7 @@
                 <p class="s14" style="padding-left: 2px;text-indent: 0px;text-align: left;">which received from Hafele
                     Call Center</p>
             </td>
-            <td style="width:175px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:175px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="3">
                 <p class="s14" style="text-indent: 0px;line-height: 89%;text-align: left;">Repair / Installation done
                     for my Appliances with full of satisfaction</p>
@@ -1030,7 +1030,7 @@
                 <p class="s9" style="padding-left: 2px;text-indent: 0px;line-height: 11px;text-align: left;">Customer
                     Signature with Date</p>
             </td>
-            <td style="width:158px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1pt"
+            <td style="width:158px;border-top-style:solid;border-top-width:1px;border-left-style:solid;border-left-width:1px;border-bottom-style:solid;border-bottom-width:1px;border-right-style:solid;border-right-width:1px"
                 colspan="2">
                 <p style="text-indent: 0px;text-align: left;"><br /></p>
                 <p class="s15" style="padding-left: 9px;text-indent: 0px;line-height: 10px;text-align: left;">Engineer

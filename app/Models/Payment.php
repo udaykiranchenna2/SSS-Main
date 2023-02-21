@@ -15,6 +15,7 @@ class Payment extends Model
        'mode',
        'amount',
        'paid',
-       'paymentStatus'
+       'paymentStatus',
+       'statusid'
     ];
 }

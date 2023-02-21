@@ -172,6 +172,8 @@ import InputError from '@/Components/InputError.vue';
     import TextInput from '@/Components/TextInput.vue'
     import Multiselect from '@vueform/multiselect'
     import Datepicker from '@vuepic/vue-datepicker';
+    import { useToast } from "vue-toastification";
+const toast = useToast();
     import {
         TransitionRoot,
         TransitionChild,
@@ -214,7 +216,9 @@ export default {
                 .then(res => {
                     if(res.data.status)
                     {
-                        // this.$inertia.get('/open-calls');
+                        toast.success("customer has been updated", {
+                        timeout: 2000
+                    }); 
                     }
                 })
             },

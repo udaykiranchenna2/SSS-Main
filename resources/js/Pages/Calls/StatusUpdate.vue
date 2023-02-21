@@ -210,7 +210,7 @@
 
                                         <td
                                             class="px-3 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
-                                            {{ index+1 }}
+                                            {{ statuses.length-index }}
                                         </td>
                                         <td
                                             class="px-3 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
@@ -233,10 +233,10 @@
                                             class="px-3 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
                                             <span v-if="item.created_at">{{ dateFormat1(item.created_at) }}</span>
                                         </td>
-                                        <td class="px-3 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap">
-                                           <div @click="openViewModal">
+                                        <td class="px-3 py-4 text-left text-sm font-medium text-gray-800 whitespace-nowrap text-center cursor-pointer">
+                                           <div @click="openViewModal(item)">
 
-                                            
+                                                View
                                            </div>
                                         </td>
 
@@ -268,7 +268,7 @@
 
                                         <div class="flex justify-between bg-gray-300  py-2  px-6">
                                             <div>
-                                                Files
+                                                Details
                                             </div>
                                             <div @click="closeViewModal" class="cursor-pointer">
                                                 <i class="fa-solid fa-x"></i>
@@ -276,7 +276,20 @@
                                         </div>
                                     </DialogTitle>
                                     <div class="mt-2 px-6">
-                                             helloo
+                                        <div v-if="activeItem.attachments && activeItem.status == 'Call Close'">
+                                            <lable class="text-xl font-bold">Payment</lable>
+                                             <div class="grid grid-cols-3" >
+                                               
+                                            </div>
+                                             </div>
+                                        <div v-if="activeItem.attachments && activeItem.attachments.length>0">
+                                            <lable class="text-xl font-bold">Uploaded Files</lable>
+                                             <div class="grid grid-cols-3" >
+                                                <div v-for="(item, index) in jsonDecoder(activeItem.attachments) " :key="index" class="hover:text-blue-500 cursor-pointer text-blue-900">
+                                                <div @click="downloadImage(item)">{{item}}</div>
+                                            </div>
+                                             </div>
+                                        </div>
                                     </div>
 
 
@@ -317,7 +330,7 @@
     import Datepicker from '@vuepic/vue-datepicker';
     import UpdateCustomer from './UpdateCustomer.vue';
     import UpdateCallDetails from './UpdateCallDetails.vue';
-
+    import baseURLD from '../../baseUrl';
     import '@vuepic/vue-datepicker/dist/main.css'
     import {
         Head,
@@ -381,12 +394,14 @@
                     sub_status: '',
                     paymentStatus: 'Due',
                     remark: '',
-                    requestno: this.item.requestno
+                    requestno: this.item.requestno,
+                    mode:'Cash'
                 }),
                 form2: new Form({
 
                 }),
-
+                baseURL:baseURLD,
+                activeItem:[],
                 isOpen: false,
                 openEdit: false,
                 openView: false,
@@ -404,7 +419,6 @@
                     'Part Replaced': 'Part Replaced',
                     'Work Shop Repair': 'Work Shop Repair',
                     'Call Close': 'Call Close',
-                    'Re-open': 'Re-open',
 
                 },
                 subStatuses: {
@@ -431,11 +445,11 @@
         },
         computed: {
             dueAmount() {
-                if (this.form.totalAmount != '' && this.form.totalAmount != null && this.form.paidAmount && this.form
-                    .paidAmount != null && this.form.totalAmount >= this.form.paidAmount) {
+                if (this.form.amount != '' && this.form.amount != null && this.form.paid && this.form
+                    .paid != null && this.form.amount >= this.form.paid) {
                     let num = 0.00;
 
-                    num = this.form.totalAmount - this.form.paidAmount;
+                    num = this.form.amount - this.form.paid;
 
                     return num.toString();
 
@@ -445,11 +459,36 @@
             }
         },
         methods: {
+            jsonDecoder(item){
+                if (item) {
+                    item =  JSON.parse(item)
+                return item;
+
+                }else{
+                    return [];
+                }
+            },  
+            async downloadImage(image) {
+      
+                let url = this.baseURL+'/'+this.storagePath+image;
+                console.log(url);
+                const response = await fetch(url);
+                const blob = await response.blob();
+
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = image;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                },
+
             closeViewModal(){
                 this.openView = false;
 
             },
             openViewModal(item) {
+                this.activeItem = item;
                 this.openView = true;
             },
 

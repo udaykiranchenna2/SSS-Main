@@ -323,11 +323,22 @@
                                         </div>
                                     </DialogTitle>
                                     <div class="mt-2 px-6">
+                                        <div>
+                                            <lable class="text-xl font-bold">Job Sheet</lable>
                                              <div class="grid grid-cols-3" >
                                                 <div v-for="(item, index) in jsonDecoder(activeItem.files) " :key="index" class="hover:text-blue-500 cursor-pointer text-blue-900">
                                                 <div @click="downloadImage(item)">{{item}}</div>
                                             </div>
                                              </div>
+                                        </div>
+                                        <div v-if="activeItem.files && activeItem.files.length>0">
+                                            <lable class="text-xl font-bold">Uploaded Files</lable>
+                                             <div class="grid grid-cols-3" >
+                                                <div v-for="(item, index) in jsonDecoder(activeItem.files) " :key="index" class="hover:text-blue-500 cursor-pointer text-blue-900">
+                                                <div @click="downloadImage(item)">{{item}}</div>
+                                            </div>
+                                             </div>
+                                        </div>
                                        
                                     </div>
 

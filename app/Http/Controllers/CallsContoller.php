@@ -114,13 +114,15 @@ class CallsContoller extends Controller {
 		$call->calltype = $request->calltype;
 		$call->visitdate = Carbon::parse($request->visitdate);
 		$fileArray = [];
+		if($request->file('files') ){
 			foreach ($request->file('files') as $file) {
 				$file_name = time().'_'.$file->getClientOriginalName();
                 $file_path = $file->storeAs('/public/callfiles', $file_name);
                 $fileArray[] = time().'_'.$file->getClientOriginalName();
 				$call->files = json_encode($fileArray);
 			}
-			 $fileArray;	
+		}
+			
 		if ($request->brandname == 'Other') {
 			$checkBrand = Brand::where('brandname', $request->extrabrand)->first();
 			$brand = new Brand();
@@ -368,6 +370,7 @@ class CallsContoller extends Controller {
 		}
 		$call->description = $request->description;
 		$call->save();
+		return response()->json(['status'=>true]);
 	}
 	public function addNewStatus(Request $request) {
 
@@ -404,7 +407,7 @@ class CallsContoller extends Controller {
 		$status->level = CallStatus::where('callid', $request->requestno)->count()+1;
 		$status->addedby = Auth::user()->id;
 		$status->save();
-        if($status->save() && $status->status == 'Call Close'){
+        if($status->save() && $status->status == 'Call Close' && $request->amount){
             $payment = new Payment();
             $payment->callid =$request->requestno;
             $payment->type ='charge';

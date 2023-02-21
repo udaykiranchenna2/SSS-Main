@@ -93,7 +93,9 @@ import InputError from '@/Components/InputError.vue';
         Tab,
         TabPanels,
         TabPanel,
-    } from '@headlessui/vue'
+    } from '@headlessui/vue';
+    import { useToast } from "vue-toastification";
+const toast = useToast();
 export default {
     components:{
         InputError,
@@ -125,6 +127,9 @@ export default {
                 .then(res => {
                     if(res.data.status)
                     {
+                        toast.success("call has been updated", {
+                        timeout: 2000
+                    }); 
                         // this.$inertia.get('/open-calls');
                     }
                 })
