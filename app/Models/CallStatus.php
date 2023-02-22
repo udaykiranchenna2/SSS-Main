@@ -21,9 +21,4 @@ class CallStatus extends Model
         'attachments',
         'addedby',
     ];
-    public function payments()
-    {
-        return $this->hasMany(Payment::class,'id','statusid')->orderby('created_at', 'desc');
-    }
-
 }
